@@ -1,0 +1,33 @@
+[general]
+name = SouthRiversToolbox
+qgisMinimumVersion = 3.4.0
+qgisMaximumVersion = 3.99.0
+description = South Rivers Toolbox
+version = 1.0.0
+author = Víctor Osores, Santiago Yepez
+email = victosores@gmail.com, syepez14@gmail.com
+category = Vector
+server = False
+about = Predictive model of river morphodynamics to support river management.
+tracker = Provide link to your bug tracker
+repository = https://github.com/vosores/South-Rivers-Toolbox
+homepage = Provide the home page for the plugin
+icon = images/icon.png
+experimental = True
+
+changelog = 
+	1.0.0
+	- First version of South Rivers Toolbox on github
+
+tags = South, rivers, Toolbox, Rivers Toolbox, South Rivers Toolbox
+
+
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated = False
+
+# Since QGIS 3.8, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=
+
