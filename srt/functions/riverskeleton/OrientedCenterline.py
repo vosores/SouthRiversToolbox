@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Spatial Components Algorithms
+OrientedCenterline
 
 ***************************************************************************
 *                                                                         *
@@ -13,4 +13,21 @@ Spatial Components Algorithms
 ***************************************************************************
 """
 
-from .ValleyBottom import ValleyBottom
+import os
+
+from qgis.core import ( # pylint:disable=no-name-in-module
+    QgsProcessingModelAlgorithm
+)
+
+from ..metadata import AlgorithmMetadata
+
+class OrientedCenterline(AlgorithmMetadata, QgsProcessingModelAlgorithm):
+    """ 
+    Oriented center-line (ie. medial axis) of the input polygons based on an auxiliary stream network.
+    """
+
+    def __init__(self, *args, **kwargs):
+
+        super().__init__(*args, **kwargs)
+        self.METADATA = AlgorithmMetadata.read(__file__, type(self).__name__)
+        self.fromFile(os.path.join(os.path.dirname(__file__), type(self).__name__ + '.model3'))

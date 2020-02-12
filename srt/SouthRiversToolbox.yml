@@ -1,3 +1,5 @@
 groups:
-  - id: module1
-    displayName: Module1
+  - id: riverskeleton
+    displayName: River Skeleton
+  - id: processingofdata
+    displayName: Processing of Data

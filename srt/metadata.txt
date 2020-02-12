@@ -10,8 +10,8 @@ category = Vector
 server = False
 about = Predictive model of river morphodynamics to support river management.
 tracker = Provide link to your bug tracker
-repository = https://github.com/vosores/South-Rivers-Toolbox
-homepage = Provide the home page for the plugin
+repository = https://github.com/vosores/SouthRiversToolbox
+homepage = https://vosores.github.io/SouthRiversToolbox/web/plugins.xml
 icon = images/icon.png
 experimental = True
 
