@@ -16,6 +16,9 @@ icon = images/icon.png
 experimental = True
 
 changelog = 
+	1.0.1
+	- Bug fixes
+
 	1.0.0
 	- First version of South Rivers Toolbox on github
 
