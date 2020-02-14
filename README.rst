@@ -10,8 +10,8 @@ South rivers Toolbox. Predictive model of river morphodynamics to support river 
 General Information
 -------------------
 
-- Website: 
-- Source code: https://github.com/vosores/South-Rivers-Toolbox
+- Website: https://vosores.github.io/SouthRiversToolbox/web/plugins.xml
+- Source code: https://github.com/vosores/SouthRiversToolbox
 - Issue tracker:
 - Documentation: 
 - Developer's Guide: 

@@ -78,7 +78,7 @@ class FillDepressions(AlgorithmMetadata, QgsProcessingAlgorithm):
             from ...lib.terrain_analysis import fillsinks
             return True, ''
         except ImportError:
-            return False, self.tr('Missing dependency: FCT terrain_analysis')
+            return False, self.tr('Missing dependency: terrain_analysis')
 
     def processAlgorithm(self, parameters, context, feedback): #pylint: disable=unused-argument,missing-docstring
 

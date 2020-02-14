@@ -2,4 +2,4 @@ groups:
   - id: riverskeleton
     displayName: River Skeleton
   - id: processingofdata
-    displayName: Processing of Data
+    displayName: Pre-processing of Data
