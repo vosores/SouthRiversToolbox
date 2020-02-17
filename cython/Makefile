@@ -1,5 +1,5 @@
 install:
-	python3 setup.py install --install-platlib=../lib
+	python3 setup.py install --install-platlib=../srt/lib
 
 clean:
 	rm -rf build
