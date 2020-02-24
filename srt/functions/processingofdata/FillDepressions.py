@@ -26,13 +26,6 @@ from qgis.core import ( # pylint:disable=import-error,no-name-in-module
 
 from ..metadata import AlgorithmMetadata
 
-# try:
-#     from ...lib.terrain_analysis import flow_accumulation
-#     CYTHON = True
-# except ImportError:
-#     from ...lib.flow_accumulation import flow_accumulation
-#     CYTHON = False
-
 class FillDepressions(AlgorithmMetadata, QgsProcessingAlgorithm):
     """
     Fill depressions in input DEM.

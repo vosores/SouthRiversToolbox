@@ -1,0 +1,9 @@
+displayName: Stream To Feature
+group: processingofdata
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - hydrography
+  - raster
+  - feature extraction

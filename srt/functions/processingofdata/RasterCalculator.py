@@ -16,15 +16,6 @@
 *                                                                         *
 ***************************************************************************
 """
-
-__author__ = 'Victor Olaya'
-__date__ = 'November 2016'
-__copyright__ = '(C) 2016, Victor Olaya'
-
-# This will get replaced with a git SHA1 when you do a git archive
-
-__revision__ = '4a4b62ed19d2333b1f3a9e72bf77119048e3c9c0'
-
 import os
 import math
 from processing.algs.qgis.QgisAlgorithm import QgisAlgorithm
@@ -44,22 +35,17 @@ from qgis.core import (QgsProcessing,
                        QgsMapLayer)
 from qgis.PyQt.QtCore import QObject
 from qgis.analysis import QgsRasterCalculator, QgsRasterCalculatorEntry
+from ..metadata import AlgorithmMetadata
 
+class RasterCalculator(AlgorithmMetadata, QgisAlgorithm):
 
-class RasterCalculator(QgisAlgorithm):
-
+    METADATA = AlgorithmMetadata.read(__file__, 'RasterCalculator')
     LAYERS = 'LAYERS'
     EXTENT = 'EXTENT'
     CELLSIZE = 'CELLSIZE'
     EXPRESSION = 'EXPRESSION'
     CRS = 'CRS'
     OUTPUT = 'OUTPUT'
-
-    def group(self):
-        return self.tr('Raster analysis')
-
-    def groupId(self):
-        return 'rasteranalysis'
 
     def __init__(self):
         super().__init__()
@@ -95,11 +81,6 @@ class RasterCalculator(QgisAlgorithm):
         self.addParameter(QgsProcessingParameterCrs(self.CRS, 'Output CRS', optional=True))
         self.addParameter(QgsProcessingParameterRasterDestination(self.OUTPUT, self.tr('Output')))
 
-    def name(self):
-        return 'rastercalculator'
-
-    def displayName(self):
-        return self.tr('Raster calculator')
 
     def processAlgorithm(self, parameters, context, feedback):
         expression = self.parameterAsString(parameters, self.EXPRESSION, context)

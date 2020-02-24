@@ -41,10 +41,10 @@ class AlgorithmMetadata(object):
     def createInstance(self):
         return type(self)()
 
-    def tr(self, string, context=''): #pylint:disable=no-self-use,invalid-name
+    def tr(self, string, context=None): #pylint:disable=no-self-use,invalid-name
 
-        if context == '':
-            context = 'FluvialCorridorToolbox'
+        if context is None:
+            context = 'SouthRiversToolbox'
 
         return QCoreApplication.translate(context, string)
 
