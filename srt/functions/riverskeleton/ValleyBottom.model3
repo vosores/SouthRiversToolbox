@@ -1,15 +1,15 @@
 <!DOCTYPE model>
 <Option type="Map">
   <Option type="Map" name="children">
-    <Option type="Map" name="fct:binaryclosing_1">
+    <Option type="Map" name="srt:binaryclosing_1">
       <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option type="QString" name="alg_id" value="fct:binaryclosing"/>
+      <Option type="QString" name="alg_id" value="srt:binaryclosing"/>
       <Option type="QString" name="component_description" value="Merge close objects"/>
       <Option type="double" name="component_pos_x" value="1261"/>
       <Option type="double" name="component_pos_y" value="612"/>
       <Option name="dependencies"/>
-      <Option type="QString" name="id" value="fct:binaryclosing_1"/>
+      <Option type="QString" name="id" value="srt:binaryclosing_1"/>
       <Option name="outputs"/>
       <Option type="bool" name="outputs_collapsed" value="true"/>
       <Option type="bool" name="parameters_collapsed" value="true"/>
@@ -178,7 +178,7 @@
         </Option>
         <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option type="QString" name="child_id" value="fct:binaryclosing_1"/>
+            <Option type="QString" name="child_id" value="srt:binaryclosing_1"/>
             <Option type="QString" name="output_name" value="OUTPUT"/>
             <Option type="int" name="source" value="1"/>
           </Option>
@@ -438,7 +438,7 @@
     </Option>
   </Option>
   <Option name="help"/>
-  <Option type="QString" name="model_group" value="Spatial Components"/>
+  <Option type="QString" name="model_group" value="River Skeleton"/>
   <Option type="QString" name="model_name" value="Valley Bottom"/>
   <Option type="Map" name="parameterDefinitions">
     <Option type="Map" name="detrendeddem">

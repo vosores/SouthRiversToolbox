@@ -1,18 +1,18 @@
 <!DOCTYPE model>
 <Option type="Map">
   <Option name="children" type="Map">
-    <Option name="fct:fixlinkorientation_1" type="Map">
+    <Option name="srt:fixlinkorientation_1" type="Map">
       <Option value="true" name="active" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="fct:fixlinkorientation" name="alg_id" type="QString"/>
+      <Option value="srt:fixlinkorientation" name="alg_id" type="QString"/>
       <Option value="Check/Fix Link Orientation" name="component_description" type="QString"/>
       <Option value="792" name="component_pos_x" type="double"/>
       <Option value="552" name="component_pos_y" type="double"/>
       <Option name="dependencies"/>
-      <Option value="fct:fixlinkorientation_1" name="id" type="QString"/>
+      <Option value="srt:fixlinkorientation_1" name="id" type="QString"/>
       <Option name="outputs" type="Map">
         <Option name="Oriented centerline" type="Map">
-          <Option value="fct:fixlinkorientation_1" name="child_id" type="QString"/>
+          <Option value="srt:fixlinkorientation_1" name="child_id" type="QString"/>
           <Option value="Oriented centerline" name="component_description" type="QString"/>
           <Option value="1014" name="component_pos_x" type="double"/>
           <Option value="583" name="component_pos_y" type="double"/>
@@ -39,7 +39,7 @@
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option value="fct:identifynetworknodes_1" name="child_id" type="QString"/>
+            <Option value="srt:identifynetworknodes_1" name="child_id" type="QString"/>
             <Option value="OUTPUT" name="output_name" type="QString"/>
             <Option value="1" name="source" type="int"/>
           </Option>
@@ -71,22 +71,22 @@
         </Option>
       </Option>
     </Option>
-    <Option name="fct:identifynetworknodes_1" type="Map">
+    <Option name="srt:identifynetworknodes_1" type="Map">
       <Option value="true" name="active" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="fct:identifynetworknodes" name="alg_id" type="QString"/>
+      <Option value="srt:identifynetworknodes" name="alg_id" type="QString"/>
       <Option value="Identify Network Nodes" name="component_description" type="QString"/>
       <Option value="503" name="component_pos_x" type="double"/>
       <Option value="410" name="component_pos_y" type="double"/>
       <Option name="dependencies"/>
-      <Option value="fct:identifynetworknodes_1" name="id" type="QString"/>
+      <Option value="srt:identifynetworknodes_1" name="id" type="QString"/>
       <Option name="outputs"/>
       <Option value="true" name="outputs_collapsed" type="bool"/>
       <Option value="true" name="parameters_collapsed" type="bool"/>
       <Option name="params" type="Map">
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option value="fct:valleycenterline_1" name="child_id" type="QString"/>
+            <Option value="srt:valleycenterline_1" name="child_id" type="QString"/>
             <Option value="native:multiparttosingleparts_1:Valley Centerline" name="output_name" type="QString"/>
             <Option value="1" name="source" type="int"/>
           </Option>
@@ -99,15 +99,15 @@
         </Option>
       </Option>
     </Option>
-    <Option name="fct:valleycenterline_1" type="Map">
+    <Option name="srt:valleycenterline_1" type="Map">
       <Option value="true" name="active" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="fct:valleycenterline" name="alg_id" type="QString"/>
+      <Option value="srt:valleycenterline" name="alg_id" type="QString"/>
       <Option value="Valley Centerline" name="component_description" type="QString"/>
       <Option value="499" name="component_pos_x" type="double"/>
       <Option value="329" name="component_pos_y" type="double"/>
       <Option name="dependencies"/>
-      <Option value="fct:valleycenterline_1" name="id" type="QString"/>
+      <Option value="srt:valleycenterline_1" name="id" type="QString"/>
       <Option name="outputs"/>
       <Option value="true" name="outputs_collapsed" type="bool"/>
       <Option value="true" name="parameters_collapsed" type="bool"/>
@@ -153,7 +153,7 @@
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option value="fct:identifynetworknodes_1" name="child_id" type="QString"/>
+            <Option value="srt:identifynetworknodes_1" name="child_id" type="QString"/>
             <Option value="NODES" name="output_name" type="QString"/>
             <Option value="1" name="source" type="int"/>
           </Option>
@@ -180,8 +180,8 @@
     </Option>
   </Option>
   <Option name="help"/>
-  <Option value="FCT Workflows" name="model_group" type="QString"/>
-  <Option value="Centerline orientée" name="model_name" type="QString"/>
+  <Option value="River Skeleton" name="model_group" type="QString"/>
+  <Option value="Oriented Centerline" name="model_name" type="QString"/>
   <Option name="parameterDefinitions" type="Map">
     <Option name="disaggregationdistance" type="Map">
       <Option value="1" name="data_type" type="int"/>
@@ -194,14 +194,14 @@
       <Option value="disaggregationdistance" name="name" type="QString"/>
       <Option value="number" name="parameter_type" type="QString"/>
     </Option>
-    <Option name="fct:fixlinkorientation_1:Oriented centerline" type="Map">
+    <Option name="srt:fixlinkorientation_1:Oriented centerline" type="Map">
       <Option value="true" name="create_by_default" type="bool"/>
       <Option value="-1" name="data_type" type="int"/>
       <Option name="default" type="invalid"/>
       <Option value="Oriented centerline" name="description" type="QString"/>
       <Option value="0" name="flags" type="int"/>
       <Option name="metadata"/>
-      <Option value="fct:fixlinkorientation_1:Oriented centerline" name="name" type="QString"/>
+      <Option value="srt:fixlinkorientation_1:Oriented centerline" name="name" type="QString"/>
       <Option value="sink" name="parameter_type" type="QString"/>
       <Option value="true" name="supports_non_file_outputs" type="bool"/>
     </Option>

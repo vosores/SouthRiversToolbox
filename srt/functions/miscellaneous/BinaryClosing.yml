@@ -1,0 +1,11 @@
+displayName: Binary Closing
+group: miscellaneous
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - raster
+  - morphology
+  - scipy
+  - closing
+  - binary

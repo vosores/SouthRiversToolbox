@@ -1,4 +1,4 @@
-displayName: Valley Centerline
+displayName: 2.- Valley Centerline (FCT)
 group: riverskeleton
 summary: |
   Center-line (ie. medial axis) of the input polygons based on an auxiliary

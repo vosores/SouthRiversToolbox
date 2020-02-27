@@ -3,3 +3,5 @@ groups:
     displayName: River Skeleton
   - id: processingofdata
     displayName: Pre-processing of Data
+  - id: miscellaneous
+    displayName: Miscellaneous

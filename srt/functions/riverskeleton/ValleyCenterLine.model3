@@ -715,7 +715,7 @@
     </Option>
   </Option>
   <Option name="help"/>
-  <Option type="QString" name="model_group" value="Test"/>
+  <Option type="QString" name="model_group" value="River Skeleton"/>
   <Option type="QString" name="model_name" value="Valley Centerline"/>
   <Option type="Map" name="parameterDefinitions">
     <Option type="Map" name="disaggregationdistance">
