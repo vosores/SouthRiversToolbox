@@ -1,8 +1,7 @@
 displayName: 2.- Valley Centerline (FCT)
 group: riverskeleton
 summary: |
-  Center-line (ie. medial axis) of the input polygons based on an auxiliary
-  stream network.
+  Center-line (ie. medial axis) of the input polygons based on an auxiliary stream network.
 description: |
   Compute the medial axis of a polygon. 
   Useful for computing centerlines of a valley bottom or any other 

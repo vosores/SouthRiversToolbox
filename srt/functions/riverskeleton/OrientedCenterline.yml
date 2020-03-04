@@ -5,3 +5,5 @@ helpString: NULL
 helpUrl: NULL
 tags:
   - hydrography
+summary: |
+  Oriented center-line (ie. medial axis) of the input polygons based on an auxiliary stream network.

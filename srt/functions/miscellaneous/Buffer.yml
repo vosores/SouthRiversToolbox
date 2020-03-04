@@ -1,0 +1,9 @@
+displayName: Buffer
+group: miscellaneous
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - hydrography
+summary: |
+  Buffer de prueba.

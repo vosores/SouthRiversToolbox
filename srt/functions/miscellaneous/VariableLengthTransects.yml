@@ -1,0 +1,9 @@
+displayName: Variable Length Transects
+group: miscellaneous
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - vector
+  - generator
+  - transect

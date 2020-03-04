@@ -40,9 +40,6 @@ from qgis.core import ( # pylint:disable=import-error,no-name-in-module
 from ..metadata import AlgorithmMetadata
 
 class StreamToFeature(AlgorithmMetadata, QgsProcessingAlgorithm):
-    """
-    Vectorize Stream Features from Flow Direction/Accumulation Rasters
-    """
 
     METADATA = AlgorithmMetadata.read(__file__, 'StreamToFeature')
 

@@ -1,0 +1,205 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="srt:planformmetrics_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="srt:planformmetrics" type="QString" name="alg_id"/>
+      <Option value="Planform Metrics" type="QString" name="component_description"/>
+      <Option value="438" type="double" name="component_pos_x"/>
+      <Option value="360" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="srt:planformmetrics_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Ouput inflexion points">
+          <Option value="srt:planformmetrics_1" type="QString" name="child_id"/>
+          <Option value="Ouput inflexion points" type="QString" name="component_description"/>
+          <Option value="638" type="double" name="component_pos_x"/>
+          <Option value="405" type="double" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="Ouput inflexion points" type="QString" name="name"/>
+          <Option value="INFLECTION_POINTS" type="QString" name="output_name"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:smoothgeometry_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="LMAX">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="200" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="MAX_ANGLE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="50" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="RESOLUTION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="10" type="double" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:multiparttosingleparts_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:multiparttosingleparts" type="QString" name="alg_id"/>
+      <Option value="De morceaux multiples à morceaux uniques" type="QString" name="component_description"/>
+      <Option value="430" type="double" name="component_pos_x"/>
+      <Option value="95" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:multiparttosingleparts_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="sequencednetwork" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:simplifygeometries_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:simplifygeometries" type="QString" name="alg_id"/>
+      <Option value="Simplifier" type="QString" name="component_description"/>
+      <Option value="434" type="double" name="component_pos_x"/>
+      <Option value="187" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:simplifygeometries_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:multiparttosingleparts_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="METHOD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="TOLERANCE">
+          <Option type="Map">
+            <Option value="simplifyoffset" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:smoothgeometry_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:smoothgeometry" type="QString" name="alg_id"/>
+      <Option value="Lisser" type="QString" name="component_description"/>
+      <Option value="434" type="double" name="component_pos_x"/>
+      <Option value="272" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:smoothgeometry_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:simplifygeometries_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="ITERATIONS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="10" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="MAX_ANGLE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="180" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OFFSET">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0.25" type="double" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option value="Fragmentation" type="QString" name="model_group"/>
+  <Option value="Inflexion points" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="srt:planformmetrics_1:Ouput inflexion points">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="0" type="int" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option value="Ouput inflexion points" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="srt:planformmetrics_1:Ouput inflexion points" type="QString" name="name"/>
+      <Option value="sink" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="sequencednetwork">
+      <Option type="List" name="data_types">
+        <Option value="1" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="Sequenced network" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="sequencednetwork" type="QString" name="name"/>
+      <Option value="source" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="simplifyoffset">
+      <Option value="1" type="int" name="data_type"/>
+      <Option value="10" type="QString" name="default"/>
+      <Option value="9" type="int" name="default_unit"/>
+      <Option value="Simplify offset" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="1.7976931348623157e+308" type="double" name="max"/>
+      <Option name="metadata"/>
+      <Option value="0" type="double" name="min"/>
+      <Option value="simplifyoffset" type="QString" name="name"/>
+      <Option value="distance" type="QString" name="parameter_type"/>
+      <Option value="sequencednetwork" type="QString" name="parent"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="sequencednetwork">
+      <Option value="sequencednetwork" type="QString" name="component_description"/>
+      <Option value="120" type="double" name="component_pos_x"/>
+      <Option value="60" type="double" name="component_pos_y"/>
+      <Option value="sequencednetwork" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="simplifyoffset">
+      <Option value="simplifyoffset" type="QString" name="component_description"/>
+      <Option value="121" type="double" name="component_pos_x"/>
+      <Option value="155" type="double" name="component_pos_y"/>
+      <Option value="simplifyoffset" type="QString" name="name"/>
+    </Option>
+  </Option>
+</Option>

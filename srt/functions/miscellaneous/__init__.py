@@ -16,3 +16,5 @@ River skeleton
 from .BinaryClosing import BinaryClosing
 from .FixLinkOrientation import FixLinkOrientation
 from .IdentifyNetworkNodes import IdentifyNetworkNodes
+from .Buffer import Buffer
+from .VariableLengthTransects import VariableLengthTransects

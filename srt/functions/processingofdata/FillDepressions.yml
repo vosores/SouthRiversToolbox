@@ -1,4 +1,4 @@
-displayName: Fill Depressions
+displayName: 3.- Fill Depressions
 group: processingofdata
 shortHelpString: NULL
 helpString: NULL
@@ -6,3 +6,5 @@ helpUrl: NULL
 tags:
   - priority flood
   - preprocessing
+summary: |
+  Fill depressions in input DEM.

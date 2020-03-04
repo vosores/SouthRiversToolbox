@@ -27,9 +27,6 @@ from qgis.core import ( # pylint:disable=import-error,no-name-in-module
 from ..metadata import AlgorithmMetadata
 
 class FillDepressions(AlgorithmMetadata, QgsProcessingAlgorithm):
-    """
-    Fill depressions in input DEM.
-    """
 
     METADATA = AlgorithmMetadata.read(__file__, 'FillDepressions')
 

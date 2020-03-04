@@ -1,4 +1,4 @@
-displayName: Flow Accumulation
+displayName: 5.- Flow Accumulation
 group: processingofdata
 shortHelpString: NULL
 helpString: NULL
@@ -6,3 +6,5 @@ helpUrl: NULL
 tags:
   - hydrography
   - contributing area
+summary: |
+  Compute flow accumulation raster.

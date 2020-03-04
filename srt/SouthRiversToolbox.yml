@@ -5,3 +5,7 @@ groups:
     displayName: Pre-processing of Data
   - id: miscellaneous
     displayName: Miscellaneous
+  - id: fragmentation
+    displayName: Fragmentation
+  - id: othersmetrics
+    displayName: Others Metrics

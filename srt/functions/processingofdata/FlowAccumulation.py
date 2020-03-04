@@ -33,8 +33,6 @@ except ImportError:
     CYTHON = False
 
 class FlowAccumulation(AlgorithmMetadata, QgsProcessingAlgorithm):
-    """ Compute flow accumulation raster.
-    """
 
     METADATA = AlgorithmMetadata.read(__file__, 'FlowAccumulation')
 

@@ -6,3 +6,5 @@ helpUrl: NULL
 tags:
   - vector
   - model
+summary: |
+  Extract Valley Bottom from relative DEM.

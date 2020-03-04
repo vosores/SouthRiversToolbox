@@ -22,9 +22,6 @@ from qgis.core import ( # pylint:disable=no-name-in-module
 from ..metadata import AlgorithmMetadata
 
 class ValleyCenterLine(AlgorithmMetadata, QgsProcessingModelAlgorithm):
-    """ 
-    Center-line (ie. medial axis) of the input polygons based on an auxiliary stream network.
-    """
 
     def __init__(self, *args, **kwargs):
 

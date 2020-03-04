@@ -1,4 +1,4 @@
-displayName: Flow Direction (D8)
+displayName: 4.- Flow Direction (D8)
 group: processingofdata
 shortHelpString: NULL
 helpString: NULL
@@ -6,3 +6,5 @@ helpUrl: NULL
 tags:
   - hydrography
   - dem
+summary: |
+  Compute D8 Flow Direction from Digital Elevation Model

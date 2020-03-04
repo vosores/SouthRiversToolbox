@@ -22,8 +22,6 @@ from qgis.core import ( # pylint:disable=no-name-in-module
 from ..metadata import AlgorithmMetadata
 
 class ValleyBottom(AlgorithmMetadata, QgsProcessingModelAlgorithm):
-    """ Extract Valley Bottom from relative DEM
-    """
 
     def __init__(self, *args, **kwargs):
 

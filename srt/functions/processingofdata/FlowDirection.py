@@ -26,9 +26,6 @@ from qgis.core import ( # pylint:disable=no-name-in-module
 from ..metadata import AlgorithmMetadata
 
 class FlowDirection(AlgorithmMetadata, QgsProcessingAlgorithm):
-    """
-    Compute D8 Flow Direction from Digital Elevation Model
-    """
 
     METADATA = AlgorithmMetadata.read(__file__, 'FlowDirection')
 
