@@ -1,0 +1,9 @@
+displayName: Confinement Contacts
+group: miscellaneous
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - hydrography
+summary: |
+  This algorithm applies a buffer to active channel and then intersect it with the valley bottom getting as result the confinement contacts.

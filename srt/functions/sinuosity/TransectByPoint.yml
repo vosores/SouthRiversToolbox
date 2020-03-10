@@ -1,0 +1,9 @@
+displayName: Transect By Point
+group: sinuosity
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - vector
+  - generator
+  - transect

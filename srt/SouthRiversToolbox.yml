@@ -9,3 +9,5 @@ groups:
     displayName: Fragmentation
   - id: othersmetrics
     displayName: Others Metrics
+  - id: sinuosity
+    displayName: Sinuosity

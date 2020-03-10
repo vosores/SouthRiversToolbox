@@ -1,18 +1,18 @@
 <!DOCTYPE model>
 <Option type="Map">
   <Option type="Map" name="children">
-    <Option type="Map" name="fct:fixlinkorientation_1">
+    <Option type="Map" name="srt:fixlinkorientation_1">
       <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option type="QString" name="alg_id" value="fct:fixlinkorientation"/>
+      <Option type="QString" name="alg_id" value="srt:fixlinkorientation"/>
       <Option type="QString" name="component_description" value="Check/Fix Link Orientation"/>
       <Option type="double" name="component_pos_x" value="574"/>
       <Option type="double" name="component_pos_y" value="553"/>
       <Option name="dependencies"/>
-      <Option type="QString" name="id" value="fct:fixlinkorientation_1"/>
+      <Option type="QString" name="id" value="srt:fixlinkorientation_1"/>
       <Option type="Map" name="outputs">
         <Option type="Map" name="Oriented Network">
-          <Option type="QString" name="child_id" value="fct:fixlinkorientation_1"/>
+          <Option type="QString" name="child_id" value="srt:fixlinkorientation_1"/>
           <Option type="QString" name="component_description" value="Oriented Network"/>
           <Option type="double" name="component_pos_x" value="774"/>
           <Option type="double" name="component_pos_y" value="598"/>
@@ -49,7 +49,7 @@
         </Option>
         <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option type="QString" name="child_id" value="fct:identifynetworknodes_1"/>
+            <Option type="QString" name="child_id" value="srt:identifynetworknodes_1"/>
             <Option type="QString" name="output_name" value="OUTPUT"/>
             <Option type="int" name="source" value="1"/>
           </Option>
@@ -81,15 +81,15 @@
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="fct:identifynetworknodes_1">
+    <Option type="Map" name="srt:identifynetworknodes_1">
       <Option type="bool" name="active" value="true"/>
       <Option name="alg_config"/>
-      <Option type="QString" name="alg_id" value="fct:identifynetworknodes"/>
+      <Option type="QString" name="alg_id" value="srt:identifynetworknodes"/>
       <Option type="QString" name="component_description" value="Identify Network Nodes"/>
       <Option type="double" name="component_pos_x" value="374"/>
       <Option type="double" name="component_pos_y" value="194"/>
       <Option name="dependencies"/>
-      <Option type="QString" name="id" value="fct:identifynetworknodes_1"/>
+      <Option type="QString" name="id" value="srt:identifynetworknodes_1"/>
       <Option name="outputs"/>
       <Option type="bool" name="outputs_collapsed" value="true"/>
       <Option type="bool" name="parameters_collapsed" value="true"/>
@@ -129,7 +129,7 @@
         </Option>
         <Option type="List" name="INPUT">
           <Option type="Map">
-            <Option type="QString" name="child_id" value="fct:identifynetworknodes_1"/>
+            <Option type="QString" name="child_id" value="srt:identifynetworknodes_1"/>
             <Option type="QString" name="output_name" value="NODES"/>
             <Option type="int" name="source" value="1"/>
           </Option>
@@ -159,14 +159,14 @@
   <Option type="QString" name="model_group" value=""/>
   <Option type="QString" name="model_name" value="Sequencing"/>
   <Option type="Map" name="parameterDefinitions">
-    <Option type="Map" name="fct:fixlinkorientation_1:Oriented Network">
+    <Option type="Map" name="srt:fixlinkorientation_1:Oriented Network">
       <Option type="bool" name="create_by_default" value="true"/>
       <Option type="int" name="data_type" value="-1"/>
       <Option name="default"/>
       <Option type="QString" name="description" value="Oriented Network"/>
       <Option type="int" name="flags" value="0"/>
       <Option name="metadata"/>
-      <Option type="QString" name="name" value="fct:fixlinkorientation_1:Oriented Network"/>
+      <Option type="QString" name="name" value="srt:fixlinkorientation_1:Oriented Network"/>
       <Option type="QString" name="parameter_type" value="sink"/>
       <Option type="bool" name="supports_non_file_outputs" value="true"/>
     </Option>

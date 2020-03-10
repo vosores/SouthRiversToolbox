@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
 """
-Buffer Prueba
-
 ***************************************************************************
 *                                                                         *
 *   This program is free software; you can redistribute it and/or modify  *
@@ -13,18 +11,6 @@ Buffer Prueba
 ***************************************************************************
 """
 
-import os
-
-from qgis.core import ( # pylint:disable=no-name-in-module
-    QgsProcessingModelAlgorithm
-)
-
-from ..metadata import AlgorithmMetadata
-
-class Buffer(AlgorithmMetadata, QgsProcessingModelAlgorithm):
-
-    def __init__(self, *args, **kwargs):
-
-        super().__init__(*args, **kwargs)
-        self.METADATA = AlgorithmMetadata.read(__file__, type(self).__name__)
-        self.fromFile(os.path.join(os.path.dirname(__file__), type(self).__name__ + '.model3'))
+from .TransectByPoint import TransectByPoint
+#from .Sequencing import Sequencing
+#from .Segmentation import Segmentation

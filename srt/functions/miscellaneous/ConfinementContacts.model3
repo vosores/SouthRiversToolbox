@@ -6,8 +6,8 @@
       <Option name="alg_config"/>
       <Option name="alg_id" type="QString" value="native:buffer"/>
       <Option name="component_description" type="QString" value="Buffer"/>
-      <Option name="component_pos_x" type="double" value="420"/>
-      <Option name="component_pos_y" type="double" value="173"/>
+      <Option name="component_pos_x" type="double" value="453"/>
+      <Option name="component_pos_y" type="double" value="170"/>
       <Option name="dependencies"/>
       <Option name="id" type="QString" value="native:buffer_1"/>
       <Option name="outputs"/>
@@ -22,8 +22,8 @@
         </Option>
         <Option name="DISTANCE" type="List">
           <Option type="Map">
-            <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="double" value="20"/>
+            <Option name="parameter_name" type="QString" value="distance"/>
+            <Option name="source" type="int" value="0"/>
           </Option>
         </Option>
         <Option name="END_CAP_STYLE" type="List">
@@ -34,7 +34,7 @@
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option name="parameter_name" type="QString" value="poligono"/>
+            <Option name="parameter_name" type="QString" value="activechannel"/>
             <Option name="source" type="int" value="0"/>
           </Option>
         </Option>
@@ -63,19 +63,29 @@
       <Option name="alg_config"/>
       <Option name="alg_id" type="QString" value="native:intersection"/>
       <Option name="component_description" type="QString" value="Intersección"/>
-      <Option name="component_pos_x" type="double" value="685"/>
-      <Option name="component_pos_y" type="double" value="287"/>
+      <Option name="component_pos_x" type="double" value="696"/>
+      <Option name="component_pos_y" type="double" value="381"/>
       <Option name="dependencies"/>
       <Option name="id" type="QString" value="native:intersection_1"/>
       <Option name="outputs" type="Map">
-        <Option name="out" type="Map">
+        <Option name="Confinement_Contacts" type="Map">
           <Option name="child_id" type="QString" value="native:intersection_1"/>
-          <Option name="component_description" type="QString" value="out"/>
-          <Option name="component_pos_x" type="double" value="914"/>
-          <Option name="component_pos_y" type="double" value="361"/>
-          <Option name="default_value" type="invalid"/>
-          <Option name="mandatory" type="bool" value="false"/>
-          <Option name="name" type="QString" value="out"/>
+          <Option name="component_description" type="QString" value="Confinement_Contacts"/>
+          <Option name="component_pos_x" type="double" value="912"/>
+          <Option name="component_pos_y" type="double" value="465"/>
+          <Option name="default_value" type="Map">
+            <Option name="class" type="QString" value="QgsProcessingOutputLayerDefinition"/>
+            <Option name="create_options" type="Map">
+              <Option name="fileEncoding" type="QString" value="System"/>
+            </Option>
+            <Option name="sink" type="Map">
+              <Option name="active" type="bool" value="true"/>
+              <Option name="type" type="int" value="1"/>
+              <Option name="val" type="QString" value="memory:"/>
+            </Option>
+          </Option>
+          <Option name="mandatory" type="bool" value="true"/>
+          <Option name="name" type="QString" value="Confinement_Contacts"/>
           <Option name="output_name" type="QString" value="OUTPUT"/>
         </Option>
       </Option>
@@ -97,7 +107,7 @@
         </Option>
         <Option name="OVERLAY" type="List">
           <Option type="Map">
-            <Option name="parameter_name" type="QString" value="polygonvalleybottom"/>
+            <Option name="parameter_name" type="QString" value="valleybottompolygon"/>
             <Option name="source" type="int" value="0"/>
           </Option>
         </Option>
@@ -112,54 +122,73 @@
   </Option>
   <Option name="help"/>
   <Option name="model_group" type="QString" value=""/>
-  <Option name="model_name" type="QString" value="Buffer_Active_channel"/>
+  <Option name="model_name" type="QString" value="Confinement Contacts"/>
   <Option name="parameterDefinitions" type="Map">
-    <Option name="native:intersection_1:out" type="Map">
-      <Option name="create_by_default" type="bool" value="true"/>
-      <Option name="data_type" type="int" value="-1"/>
+    <Option name="activechannel" type="Map">
+      <Option name="data_types" type="List">
+        <Option type="int" value="2"/>
+      </Option>
       <Option name="default" type="invalid"/>
-      <Option name="description" type="QString" value="out"/>
+      <Option name="description" type="QString" value="Active Channel"/>
       <Option name="flags" type="int" value="0"/>
       <Option name="metadata"/>
-      <Option name="name" type="QString" value="native:intersection_1:out"/>
+      <Option name="name" type="QString" value="activechannel"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="distance" type="Map">
+      <Option name="data_type" type="int" value="1"/>
+      <Option name="default" type="QString" value="5"/>
+      <Option name="default_unit" type="int" value="9"/>
+      <Option name="description" type="QString" value="Distance"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="max" type="double" value="100"/>
+      <Option name="metadata"/>
+      <Option name="min" type="double" value="0"/>
+      <Option name="name" type="QString" value="distance"/>
+      <Option name="parameter_type" type="QString" value="distance"/>
+      <Option name="parent" type="QString" value=""/>
+    </Option>
+    <Option name="native:intersection_1:Confinement_Contacts" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="data_type" type="int" value="-1"/>
+      <Option name="default"/>
+      <Option name="description" type="QString" value="Confinement_Contacts"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="native:intersection_1:Confinement_Contacts"/>
       <Option name="parameter_type" type="QString" value="sink"/>
       <Option name="supports_non_file_outputs" type="bool" value="true"/>
     </Option>
-    <Option name="poligono" type="Map">
+    <Option name="valleybottompolygon" type="Map">
       <Option name="data_types" type="List">
         <Option type="int" value="2"/>
       </Option>
       <Option name="default" type="invalid"/>
-      <Option name="description" type="QString" value="poligono"/>
+      <Option name="description" type="QString" value="Valley Bottom Polygon"/>
       <Option name="flags" type="int" value="0"/>
       <Option name="metadata"/>
-      <Option name="name" type="QString" value="poligono"/>
-      <Option name="parameter_type" type="QString" value="vector"/>
-    </Option>
-    <Option name="polygonvalleybottom" type="Map">
-      <Option name="data_types" type="List">
-        <Option type="int" value="2"/>
-      </Option>
-      <Option name="default" type="invalid"/>
-      <Option name="description" type="QString" value="polygon_valley_bottom_seg500m"/>
-      <Option name="flags" type="int" value="0"/>
-      <Option name="metadata"/>
-      <Option name="name" type="QString" value="polygonvalleybottom"/>
+      <Option name="name" type="QString" value="valleybottompolygon"/>
       <Option name="parameter_type" type="QString" value="vector"/>
     </Option>
   </Option>
   <Option name="parameters" type="Map">
-    <Option name="poligono" type="Map">
-      <Option name="component_description" type="QString" value="poligono"/>
+    <Option name="activechannel" type="Map">
+      <Option name="component_description" type="QString" value="activechannel"/>
       <Option name="component_pos_x" type="double" value="120"/>
       <Option name="component_pos_y" type="double" value="60"/>
-      <Option name="name" type="QString" value="poligono"/>
+      <Option name="name" type="QString" value="activechannel"/>
     </Option>
-    <Option name="polygonvalleybottom" type="Map">
-      <Option name="component_description" type="QString" value="polygonvalleybottom"/>
-      <Option name="component_pos_x" type="double" value="404"/>
-      <Option name="component_pos_y" type="double" value="363"/>
-      <Option name="name" type="QString" value="polygonvalleybottom"/>
+    <Option name="distance" type="Map">
+      <Option name="component_description" type="QString" value="distance"/>
+      <Option name="component_pos_x" type="double" value="119"/>
+      <Option name="component_pos_y" type="double" value="128"/>
+      <Option name="name" type="QString" value="distance"/>
+    </Option>
+    <Option name="valleybottompolygon" type="Map">
+      <Option name="component_description" type="QString" value="valleybottompolygon"/>
+      <Option name="component_pos_x" type="double" value="354"/>
+      <Option name="component_pos_y" type="double" value="294"/>
+      <Option name="name" type="QString" value="valleybottompolygon"/>
     </Option>
   </Option>
 </Option>

@@ -1,5 +1,5 @@
-displayName: Segmentation
-group: disaggregation
+displayName: 2.- Segmentation
+group: fragmentation
 summary: |
   Disaggregate fluvial units (polygons or polylines) in DGO of chosen size.
 

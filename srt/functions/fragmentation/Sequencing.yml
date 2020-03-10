@@ -1,5 +1,5 @@
-displayName: Sequencing
-group: disaggregation
+displayName: 1.- Sequencing
+group: fragmentation
 summary: |
   Check and correct ordination and orientation of a stream network using a DEM.
 
@@ -40,7 +40,3 @@ parameters:
     type: LineString
     description: The output sequenced linear network (or linear feature).
 
-seealso:
-  - "[Identify Network Nodes](../../../algorithms/hydrography/IdentifyNetworkNodes/)"
-  - "[Drape Vectors](../../../algorithms/raster/DrapeVectors/)"
-  - "[Check/Fix Link Orientation](../../../algorithms/hydrography/FixLinkOrientation/)"
