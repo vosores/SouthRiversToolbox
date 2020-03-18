@@ -190,6 +190,14 @@ Repository:
 </td>
 </tr>
 </table>
+<p align="justify">
+ACKNOWLEDGEMENTS: The South Rivers Toolbox has been supported in collaboration with: Facultad de Ciencias Forestales de la Universidad de Concepción, Facultad de Ingeniería de la Universidad de Concepción, Innova Chile-Corfo, Dirección de Obras Hidráulicas-Ministerio de Obras Publicas and Universidad de Concepción.
+</p>
+<a title="Facultad de ciencias forestales" href="http://www.forestal.udec.cl"><img src="forestal.png" alt="Facultad Ciencias Forestal Universidad de Concepción" width="185" hspace="8"/></a>
+<a title="Universidad de Concepción" href="http://www.udec.cl"><img src="udec.jpg" alt="Universidad de Concepción" width="95" hspace="8"/></a>
+<a title="CORFO" href="www.corfo.cl"><img src="corfo.png" alt="CORFO" width="170" hspace="8"/></a>
+<a title="Dirección de obras hidráulicas" href="http://www.doh.gov.cl"><img src="DOH.jpg" alt="Obras hidraulicas" width="70" hspace="8"/></a>
+<a title="Facultad de ingeniería" href="https://fi.udec.cl"><img src="ingenieria.png" alt="Facultad de Ingeniería de la Universidad de Concepción" width="115" hspace="8"/></a>
 </body>
 </html>
 
