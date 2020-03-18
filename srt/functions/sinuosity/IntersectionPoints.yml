@@ -1,0 +1,7 @@
+displayName: Intersection points
+group: sinuosity
+summary: |
+  Return the intersection points of the lines one and two.
+tags:
+  - sinuosity
+  - inflection

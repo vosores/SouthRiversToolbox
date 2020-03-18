@@ -12,5 +12,6 @@
 """
 
 from .TransectByPoint import TransectByPoint
-#from .Sequencing import Sequencing
-#from .Segmentation import Segmentation
+from .InflexionPoints import InflexionPoints
+from .IntersectionPoints import IntersectionPoints
+from .Axisequencing import Axisequencing

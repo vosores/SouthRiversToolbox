@@ -1,5 +1,5 @@
-displayName: 3.- Inflexion points
-group: fragmentation
+displayName: Inflexion points
+group: sinuosity
 summary: |
   Return attributed inflexion points and inflection lines.
 

@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
+IntersectionPoints (South Rivers Toolbox)
+
 ***************************************************************************
 *                                                                         *
 *   This program is free software; you can redistribute it and/or modify  *
@@ -11,5 +13,21 @@
 ***************************************************************************
 """
 
-from .Sequencing import Sequencing
-from .Segmentation import Segmentation
+import os
+
+from qgis.core import ( # pylint:disable=no-name-in-module
+    QgsProcessingModelAlgorithm
+)
+
+from ..metadata import AlgorithmMetadata
+
+class IntersectionPoints(AlgorithmMetadata, QgsProcessingModelAlgorithm):
+    """ 
+	Intersection Points
+    """
+
+    def __init__(self, *args, **kwargs):
+
+        super().__init__(*args, **kwargs)
+        self.METADATA = AlgorithmMetadata.read(__file__, type(self).__name__)
+        self.fromFile(os.path.join(os.path.dirname(__file__), type(self).__name__ + '.model3'))

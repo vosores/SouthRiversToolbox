@@ -17,4 +17,3 @@ from .BinaryClosing import BinaryClosing
 from .FixLinkOrientation import FixLinkOrientation
 from .IdentifyNetworkNodes import IdentifyNetworkNodes
 from .VariableLengthTransects import VariableLengthTransects
-from .ConfinementContacts import ConfinementContacts

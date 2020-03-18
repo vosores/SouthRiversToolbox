@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
+Confinement
+
 ***************************************************************************
 *                                                                         *
 *   This program is free software; you can redistribute it and/or modify  *
@@ -10,6 +12,4 @@
 *                                                                         *
 ***************************************************************************
 """
-
-from .Sequencing import Sequencing
-from .Segmentation import Segmentation
+from .ConfinementContacts import ConfinementContacts

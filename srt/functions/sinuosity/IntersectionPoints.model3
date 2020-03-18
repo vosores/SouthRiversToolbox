@@ -1,0 +1,114 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="native:lineintersections_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:lineintersections" name="alg_id" type="QString"/>
+      <Option value="Intersección de lineas" name="component_description" type="QString"/>
+      <Option value="469" name="component_pos_x" type="double"/>
+      <Option value="159" name="component_pos_y" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:lineintersections_1" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Intersection points" type="Map">
+          <Option value="native:lineintersections_1" name="child_id" type="QString"/>
+          <Option value="Intersection points" name="component_description" type="QString"/>
+          <Option value="749" name="component_pos_x" type="double"/>
+          <Option value="272" name="component_pos_y" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option value="false" name="mandatory" type="bool"/>
+          <Option value="Intersection points" name="name" type="QString"/>
+          <Option value="OUTPUT" name="output_name" type="QString"/>
+        </Option>
+      </Option>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="lineone" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_FIELDS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="INTERSECT" type="List">
+          <Option type="Map">
+            <Option value="linetwo" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INTERSECT_FIELDS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="INTERSECT_FIELDS_PREFIX" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option value="Sinuosity" name="model_group" type="QString"/>
+  <Option value="Intersection Points" name="model_name" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="lineone" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="1" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option value="Line one" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="lineone" name="name" type="QString"/>
+      <Option value="vector" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="linetwo" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="1" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option value="Line two" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="linetwo" name="name" type="QString"/>
+      <Option value="vector" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="native:lineintersections_1:Intersection points" type="Map">
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option value="0" name="data_type" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option value="Intersection points" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option name="metadata"/>
+      <Option value="native:lineintersections_1:Intersection points" name="name" type="QString"/>
+      <Option value="sink" name="parameter_type" type="QString"/>
+      <Option value="true" name="supports_non_file_outputs" type="bool"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="lineone" type="Map">
+      <Option value="lineone" name="component_description" type="QString"/>
+      <Option value="120" name="component_pos_x" type="double"/>
+      <Option value="60" name="component_pos_y" type="double"/>
+      <Option value="lineone" name="name" type="QString"/>
+    </Option>
+    <Option name="linetwo" type="Map">
+      <Option value="linetwo" name="component_description" type="QString"/>
+      <Option value="126" name="component_pos_x" type="double"/>
+      <Option value="126" name="component_pos_y" type="double"/>
+      <Option value="linetwo" name="name" type="QString"/>
+    </Option>
+  </Option>
+</Option>

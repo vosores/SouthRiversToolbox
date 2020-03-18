@@ -11,3 +11,5 @@ groups:
     displayName: Others Metrics
   - id: sinuosity
     displayName: Sinuosity
+  - id: confinement
+    displayName: Confinement
