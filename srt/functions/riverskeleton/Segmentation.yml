@@ -1,5 +1,5 @@
-displayName: 2.- Segmentation
-group: fragmentation
+displayName: 4.- Segmentation
+group: riverskeleton
 summary: |
   Disaggregate fluvial units (polygons or polylines) in DGO of chosen size.
 

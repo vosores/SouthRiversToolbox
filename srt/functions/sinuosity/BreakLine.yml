@@ -1,0 +1,9 @@
+displayName: Break Line
+group: sinuosity
+summary: |
+  Break the Line 1 in intersection points with Line 2.
+tags:
+  - hydrography
+  - ordination
+  - network
+  - polyline

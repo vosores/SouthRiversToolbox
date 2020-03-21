@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
+BreakLine
+
 ***************************************************************************
 *                                                                         *
 *   This program is free software; you can redistribute it and/or modify  *
@@ -11,8 +13,21 @@
 ***************************************************************************
 """
 
-from .TransectByPoint import TransectByPoint
-from .InflexionPoints import InflexionPoints
-from .IntersectionPoints import IntersectionPoints
-from .Axisequencing import Axisequencing
-from .BreakLine import BreakLine
+import os
+
+from qgis.core import ( # pylint:disable=no-name-in-module
+    QgsProcessingModelAlgorithm
+)
+
+from ..metadata import AlgorithmMetadata
+
+class BreakLine(AlgorithmMetadata, QgsProcessingModelAlgorithm):
+    """ 
+    Break Line
+    """
+
+    def __init__(self, *args, **kwargs):
+
+        super().__init__(*args, **kwargs)
+        self.METADATA = AlgorithmMetadata.read(__file__, type(self).__name__)
+        self.fromFile(os.path.join(os.path.dirname(__file__), type(self).__name__ + '.model3'))

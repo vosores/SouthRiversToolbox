@@ -1,15 +1,15 @@
 groups:
   - id: riverskeleton
-    displayName: River Skeleton
+    displayName: c.- River Skeleton
   - id: processingofdata
-    displayName: Pre-processing of Data
+    displayName: b.- Pre-processing of Data
   - id: miscellaneous
-    displayName: Miscellaneous
-  - id: fragmentation
-    displayName: Fragmentation
+    displayName: a.- Miscellaneous
   - id: othersmetrics
-    displayName: Others Metrics
+    displayName: f.- Others Metrics
   - id: sinuosity
-    displayName: Sinuosity
+    displayName: d.- Sinuosity
   - id: confinement
-    displayName: Confinement
+    displayName: e.- Confinement
+  - id: riverclasification
+    displayName: g.- River Style Clasification

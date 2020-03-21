@@ -1,0 +1,96 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="native:splitwithlines_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:splitwithlines" type="QString" name="alg_id"/>
+      <Option value="Break Line 1 in intersection points with Line 2" type="QString" name="component_description"/>
+      <Option value="458" type="double" name="component_pos_x"/>
+      <Option value="253" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:splitwithlines_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Break of Line 1">
+          <Option value="native:splitwithlines_1" type="QString" name="child_id"/>
+          <Option value="Break of Line 1" type="QString" name="component_description"/>
+          <Option value="748" type="double" name="component_pos_x"/>
+          <Option value="374" type="double" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="Break of Line 1" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="linetobreak" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="LINES">
+          <Option type="Map">
+            <Option value="breakinginintersectionpointswithline2" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option value="sinuosity" type="QString" name="model_group"/>
+  <Option value="BreakLine" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="breakinginintersectionpointswithline2">
+      <Option type="List" name="data_types">
+        <Option value="1" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="Breaking in intersection points with Line 2" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="breakinginintersectionpointswithline2" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="linetobreak">
+      <Option type="List" name="data_types">
+        <Option value="1" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="Line to break (Line 1)" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="linetobreak" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="native:splitwithlines_1:Break of Line 1">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="-1" type="int" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option value="Break of Line 1" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="native:splitwithlines_1:Break of Line 1" type="QString" name="name"/>
+      <Option value="sink" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="breakinginintersectionpointswithline2">
+      <Option value="breakinginintersectionpointswithline2" type="QString" name="component_description"/>
+      <Option value="116" type="double" name="component_pos_x"/>
+      <Option value="127" type="double" name="component_pos_y"/>
+      <Option value="breakinginintersectionpointswithline2" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="linetobreak">
+      <Option value="linetobreak" type="QString" name="component_description"/>
+      <Option value="120" type="double" name="component_pos_x"/>
+      <Option value="60" type="double" name="component_pos_y"/>
+      <Option value="linetobreak" type="QString" name="name"/>
+    </Option>
+  </Option>
+</Option>

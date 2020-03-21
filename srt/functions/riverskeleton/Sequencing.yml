@@ -1,5 +1,5 @@
-displayName: 1.- Sequencing
-group: fragmentation
+displayName: 5.- Sequencing
+group: riverskeleton
 summary: |
   Check and correct ordination and orientation of a stream network using a DEM.
 
