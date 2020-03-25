@@ -1,0 +1,105 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="grass7:r.fill.dir_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="grass7:r.fill.dir" type="QString" name="alg_id"/>
+      <Option value="r.fill.dir" type="QString" name="component_description"/>
+      <Option value="390" type="double" name="component_pos_x"/>
+      <Option value="130" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="grass7:r.fill.dir_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="filled_dem">
+          <Option value="grass7:r.fill.dir_1" type="QString" name="child_id"/>
+          <Option value="filled_dem" type="QString" name="component_description"/>
+          <Option value="629" type="double" name="component_pos_x"/>
+          <Option value="214" type="double" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="filled_dem" type="QString" name="name"/>
+          <Option value="output" type="QString" name="output_name"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="-f">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_RASTER_FORMAT_META">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_RASTER_FORMAT_OPT">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_REGION_CELLSIZE_PARAMETER">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_REGION_PARAMETER">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="format">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="input">
+          <Option type="Map">
+            <Option value="DEM" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option value="processingofdata" type="QString" name="model_group"/>
+  <Option value="Fill Depressions" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="DEM">
+      <Option type="invalid" name="default"/>
+      <Option value="DEM" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="DEM" type="QString" name="name"/>
+      <Option value="raster" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="grass7:r.fill.dir_1:filled_dem">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option type="invalid" name="default"/>
+      <Option value="filled_dem" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="grass7:r.fill.dir_1:filled_dem" type="QString" name="name"/>
+      <Option value="rasterDestination" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="DEM">
+      <Option value="DEM" type="QString" name="component_description"/>
+      <Option value="120" type="double" name="component_pos_x"/>
+      <Option value="60" type="double" name="component_pos_y"/>
+      <Option value="DEM" type="QString" name="name"/>
+    </Option>
+  </Option>
+</Option>

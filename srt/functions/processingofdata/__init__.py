@@ -20,3 +20,4 @@ from .FlowDirection import FlowDirection
 from .FlowAccumulation import FlowAccumulation
 from .RasterCalculator import RasterCalculator
 from .StreamToFeature import StreamToFeature
+from .FlowDirectionCorrected import FlowDirectionCorrected

@@ -1,0 +1,10 @@
+displayName: 5.- Flow Direction (D8) Corrected
+group: processingofdata
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - hydrography
+  - dem
+summary: |
+  Compute a correction of D8 Flow Direction from Digital Elevation Model

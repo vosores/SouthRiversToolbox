@@ -1,0 +1,205 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="grass7:r.watershed_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="grass7:r.watershed" type="QString"/>
+      <Option name="component_description" value="r.watershed" type="QString"/>
+      <Option name="component_pos_x" value="488" type="double"/>
+      <Option name="component_pos_y" value="272" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="grass7:r.watershed_1" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Flow directions (D8)" type="Map">
+          <Option name="child_id" value="grass7:r.watershed_1" type="QString"/>
+          <Option name="component_description" value="Flow directions (D8)" type="QString"/>
+          <Option name="component_pos_x" value="798" type="double"/>
+          <Option name="component_pos_y" value="406" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="Flow directions (D8)" type="QString"/>
+          <Option name="output_name" value="drainage" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="-4" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="-a" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="-b" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="-m" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="-s" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="true" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="GRASS_RASTER_FORMAT_META" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="GRASS_RASTER_FORMAT_OPT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="GRASS_REGION_CELLSIZE_PARAMETER" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="double"/>
+          </Option>
+        </Option>
+        <Option name="GRASS_REGION_PARAMETER" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="blocking" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="convergence" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="5" type="int"/>
+          </Option>
+        </Option>
+        <Option name="depression" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="disturbed_land" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="elevation" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="FilledDEM" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="flow" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="max_slope_length" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="minimum" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="memory" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="maximummemorytobeusedinmb" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="threshold" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="modelVariables"/>
+  <Option name="model_group" value="" type="QString"/>
+  <Option name="model_name" value="Flow Directions (D8)" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="FilledDEM" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="Filled_DEM" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="FilledDEM" type="QString"/>
+      <Option name="parameter_type" value="raster" type="QString"/>
+    </Option>
+    <Option name="grass7:r.watershed_1:Flow directions (D8)" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="Flow directions (D8)" type="QString"/>
+      <Option name="flags" value="8" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="grass7:r.watershed_1:Flow directions (D8)" type="QString"/>
+      <Option name="parameter_type" value="rasterDestination" type="QString"/>
+      <Option name="supports_non_file_outputs" value="false" type="bool"/>
+    </Option>
+    <Option name="maximummemorytobeusedinmb" type="Map">
+      <Option name="data_type" value="1" type="int"/>
+      <Option name="default" value="1000" type="QString"/>
+      <Option name="description" value="Maximum memory to be used (in mb)" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="max" value="10000" type="double"/>
+      <Option name="metadata"/>
+      <Option name="min" value="0" type="double"/>
+      <Option name="name" value="maximummemorytobeusedinmb" type="QString"/>
+      <Option name="parameter_type" value="number" type="QString"/>
+    </Option>
+    <Option name="minimum" type="Map">
+      <Option name="data_type" value="1" type="int"/>
+      <Option name="default" value="500" type="QString"/>
+      <Option name="description" value="Minimum size of exterior watershed basin" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="max" value="10000" type="double"/>
+      <Option name="metadata"/>
+      <Option name="min" value="0" type="double"/>
+      <Option name="name" value="minimum" type="QString"/>
+      <Option name="parameter_type" value="number" type="QString"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="FilledDEM" type="Map">
+      <Option name="component_description" value="FilledDEM" type="QString"/>
+      <Option name="component_pos_x" value="120" type="double"/>
+      <Option name="component_pos_y" value="60" type="double"/>
+      <Option name="name" value="FilledDEM" type="QString"/>
+    </Option>
+    <Option name="maximummemorytobeusedinmb" type="Map">
+      <Option name="component_description" value="maximummemorytobeusedinmb" type="QString"/>
+      <Option name="component_pos_x" value="163" type="double"/>
+      <Option name="component_pos_y" value="270" type="double"/>
+      <Option name="name" value="maximummemorytobeusedinmb" type="QString"/>
+    </Option>
+    <Option name="minimum" type="Map">
+      <Option name="component_description" value="minimum" type="QString"/>
+      <Option name="component_pos_x" value="145" type="double"/>
+      <Option name="component_pos_y" value="167" type="double"/>
+      <Option name="name" value="minimum" type="QString"/>
+    </Option>
+  </Option>
+</Option>
