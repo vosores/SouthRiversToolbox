@@ -11,15 +11,15 @@
       <Option name="dependencies"/>
       <Option type="QString" value="grass7:r.watershed_1" name="id"/>
       <Option type="Map" name="outputs">
-        <Option type="Map" name="Flow directions (D8)">
+        <Option type="Map" name="Flow Accumulation">
           <Option type="QString" value="grass7:r.watershed_1" name="child_id"/>
-          <Option type="QString" value="Flow directions (D8)" name="component_description"/>
-          <Option type="double" value="798" name="component_pos_x"/>
-          <Option type="double" value="406" name="component_pos_y"/>
+          <Option type="QString" value="Flow Accumulation" name="component_description"/>
+          <Option type="double" value="764" name="component_pos_x"/>
+          <Option type="double" value="367" name="component_pos_y"/>
           <Option type="invalid" name="default_value"/>
           <Option type="bool" value="false" name="mandatory"/>
-          <Option type="QString" value="Flow directions (D8)" name="name"/>
-          <Option type="QString" value="drainage" name="output_name"/>
+          <Option type="QString" value="Flow Accumulation" name="name"/>
+          <Option type="QString" value="accumulation" name="output_name"/>
         </Option>
       </Option>
       <Option type="bool" value="true" name="outputs_collapsed"/>
@@ -139,7 +139,7 @@
   <Option name="help"/>
   <Option name="modelVariables"/>
   <Option type="QString" value="processingofdata" name="model_group"/>
-  <Option type="QString" value="Flow Directions (D8)" name="model_name"/>
+  <Option type="QString" value="Flow Accumulation" name="model_name"/>
   <Option type="Map" name="parameterDefinitions">
     <Option type="Map" name="FilledDEM">
       <Option type="invalid" name="default"/>
@@ -149,13 +149,13 @@
       <Option type="QString" value="FilledDEM" name="name"/>
       <Option type="QString" value="raster" name="parameter_type"/>
     </Option>
-    <Option type="Map" name="grass7:r.watershed_1:Flow directions (D8)">
+    <Option type="Map" name="grass7:r.watershed_1:Flow Accumulation">
       <Option type="bool" value="true" name="create_by_default"/>
       <Option type="invalid" name="default"/>
-      <Option type="QString" value="Flow directions (D8)" name="description"/>
+      <Option type="QString" value="Flow Accumulation" name="description"/>
       <Option type="int" value="8" name="flags"/>
       <Option name="metadata"/>
-      <Option type="QString" value="grass7:r.watershed_1:Flow directions (D8)" name="name"/>
+      <Option type="QString" value="grass7:r.watershed_1:Flow Accumulation" name="name"/>
       <Option type="QString" value="rasterDestination" name="parameter_type"/>
       <Option type="bool" value="false" name="supports_non_file_outputs"/>
     </Option>

@@ -18,6 +18,8 @@ from .ClipRasterByMask import ClipRasterByMask
 from .FillDepressions import FillDepressions
 from .FlowDirection import FlowDirection
 from .FlowAccumulation import FlowAccumulation
-from .RasterCalculator import RasterCalculator
-from .StreamToFeature import StreamToFeature
+#from .RasterCalculator import RasterCalculator
+#from .StreamToFeature import StreamToFeature
 from .FlowDirectionCorrected import FlowDirectionCorrected
+from .Channels import Channels
+from .RiversLines import RiversLines

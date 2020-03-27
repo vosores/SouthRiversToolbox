@@ -1,58 +1,58 @@
 <!DOCTYPE model>
 <Option type="Map">
-  <Option name="children" type="Map">
-    <Option name="qgis:rastercalculator_1" type="Map">
-      <Option name="active" value="true" type="bool"/>
+  <Option type="Map" name="children">
+    <Option type="Map" name="qgis:rastercalculator_1">
+      <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
-      <Option name="alg_id" value="qgis:rastercalculator" type="QString"/>
-      <Option name="component_description" value="Raster calculator" type="QString"/>
-      <Option name="component_pos_x" value="338" type="double"/>
-      <Option name="component_pos_y" value="127" type="double"/>
+      <Option type="QString" value="qgis:rastercalculator" name="alg_id"/>
+      <Option type="QString" value="Raster calculator" name="component_description"/>
+      <Option type="double" value="338" name="component_pos_x"/>
+      <Option type="double" value="127" name="component_pos_y"/>
       <Option name="dependencies"/>
-      <Option name="id" value="qgis:rastercalculator_1" type="QString"/>
-      <Option name="outputs" type="Map">
-        <Option name="Flow directions (D8) corrected" type="Map">
-          <Option name="child_id" value="qgis:rastercalculator_1" type="QString"/>
-          <Option name="component_description" value="Flow directions (D8) corrected" type="QString"/>
-          <Option name="component_pos_x" value="538" type="double"/>
-          <Option name="component_pos_y" value="172" type="double"/>
-          <Option name="default_value" type="invalid"/>
-          <Option name="mandatory" value="false" type="bool"/>
-          <Option name="name" value="Flow directions (D8) corrected" type="QString"/>
-          <Option name="output_name" value="OUTPUT" type="QString"/>
+      <Option type="QString" value="qgis:rastercalculator_1" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="Flow directions (D8) corrected">
+          <Option type="QString" value="qgis:rastercalculator_1" name="child_id"/>
+          <Option type="QString" value="Flow directions (D8) corrected" name="component_description"/>
+          <Option type="double" value="538" name="component_pos_x"/>
+          <Option type="double" value="172" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option type="bool" value="false" name="mandatory"/>
+          <Option type="QString" value="Flow directions (D8) corrected" name="name"/>
+          <Option type="QString" value="OUTPUT" name="output_name"/>
         </Option>
       </Option>
-      <Option name="outputs_collapsed" value="true" type="bool"/>
-      <Option name="parameters_collapsed" value="true" type="bool"/>
-      <Option name="params" type="Map">
-        <Option name="CELLSIZE" type="List">
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="CELLSIZE">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value="0" type="double"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="double" value="0" name="static_value"/>
           </Option>
         </Option>
-        <Option name="CRS" type="List">
+        <Option type="List" name="CRS">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="EXPRESSION" type="List">
+        <Option type="List" name="EXPRESSION">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" value=" ( &quot;Flow Directions (D8) @1&quot; &lt; 0 )  * -1 * &quot;Flow Directions (D8) @1&quot; +  ( &quot;Flow Directions (D8) @1&quot; >= 0 )  * &quot;Flow Directions (D8) @1&quot;" type="QString"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value=" ( &quot;Flow Directions (D8) @1&quot; &lt; 0 )  * -1 * &quot;Flow Directions (D8) @1&quot; +  ( &quot;Flow Directions (D8) @1&quot; >= 0 )  * &quot;Flow Directions (D8) @1&quot;" name="static_value"/>
           </Option>
         </Option>
-        <Option name="EXTENT" type="List">
+        <Option type="List" name="EXTENT">
           <Option type="Map">
-            <Option name="source" value="2" type="int"/>
-            <Option name="static_value" type="invalid"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
-        <Option name="LAYERS" type="List">
+        <Option type="List" name="LAYERS">
           <Option type="Map">
-            <Option name="parameter_name" value="DEm" type="QString"/>
-            <Option name="source" value="0" type="int"/>
+            <Option type="QString" value="DEm" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
           </Option>
         </Option>
       </Option>
@@ -60,34 +60,34 @@
   </Option>
   <Option name="help"/>
   <Option name="modelVariables"/>
-  <Option name="model_group" value="" type="QString"/>
-  <Option name="model_name" value="Flow Directions (D8) corrected" type="QString"/>
-  <Option name="parameterDefinitions" type="Map">
-    <Option name="DEm" type="Map">
-      <Option name="default" type="invalid"/>
-      <Option name="description" value="Flow Directions (D8) " type="QString"/>
-      <Option name="flags" value="0" type="int"/>
+  <Option type="QString" value="processingofdata" name="model_group"/>
+  <Option type="QString" value="Flow Directions (D8) corrected" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="DEm">
+      <Option type="invalid" name="default"/>
+      <Option type="QString" value="Flow Directions (D8) " name="description"/>
+      <Option type="int" value="0" name="flags"/>
       <Option name="metadata"/>
-      <Option name="name" value="DEm" type="QString"/>
-      <Option name="parameter_type" value="raster" type="QString"/>
+      <Option type="QString" value="DEm" name="name"/>
+      <Option type="QString" value="raster" name="parameter_type"/>
     </Option>
-    <Option name="qgis:rastercalculator_1:Flow directions (D8) corrected" type="Map">
-      <Option name="create_by_default" value="true" type="bool"/>
-      <Option name="default" type="invalid"/>
-      <Option name="description" value="Flow directions (D8) corrected" type="QString"/>
-      <Option name="flags" value="0" type="int"/>
+    <Option type="Map" name="qgis:rastercalculator_1:Flow directions (D8) corrected">
+      <Option type="bool" value="true" name="create_by_default"/>
+      <Option type="invalid" name="default"/>
+      <Option type="QString" value="Flow directions (D8) corrected" name="description"/>
+      <Option type="int" value="0" name="flags"/>
       <Option name="metadata"/>
-      <Option name="name" value="qgis:rastercalculator_1:Flow directions (D8) corrected" type="QString"/>
-      <Option name="parameter_type" value="rasterDestination" type="QString"/>
-      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+      <Option type="QString" value="qgis:rastercalculator_1:Flow directions (D8) corrected" name="name"/>
+      <Option type="QString" value="rasterDestination" name="parameter_type"/>
+      <Option type="bool" value="true" name="supports_non_file_outputs"/>
     </Option>
   </Option>
-  <Option name="parameters" type="Map">
-    <Option name="DEm" type="Map">
-      <Option name="component_description" value="DEm" type="QString"/>
-      <Option name="component_pos_x" value="120" type="double"/>
-      <Option name="component_pos_y" value="60" type="double"/>
-      <Option name="name" value="DEm" type="QString"/>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="DEm">
+      <Option type="QString" value="DEm" name="component_description"/>
+      <Option type="double" value="120" name="component_pos_x"/>
+      <Option type="double" value="60" name="component_pos_y"/>
+      <Option type="QString" value="DEm" name="name"/>
     </Option>
   </Option>
 </Option>
