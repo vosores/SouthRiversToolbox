@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Channel
+Conditional
 
 ***************************************************************************
 *                                                                         *
@@ -25,9 +25,9 @@ from qgis.core import (
 
 from ..metadata import AlgorithmMetadata
 
-class Channels(AlgorithmMetadata, QgsProcessingAlgorithm):
+class Conditional(AlgorithmMetadata, QgsProcessingAlgorithm):
 
-    METADATA = AlgorithmMetadata.read(__file__, 'Channels')
+    METADATA = AlgorithmMetadata.read(__file__, 'Conditional')
 
     MINLEVEL = 'MINLEVEL'
     MAXLEVEL = 'MAXLEVEL'

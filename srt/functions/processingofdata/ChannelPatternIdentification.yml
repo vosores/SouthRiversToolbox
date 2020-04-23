@@ -1,0 +1,10 @@
+displayName: Channel Pattern Identification
+group: processingofdata
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - hydrography
+  - dem
+summary: |
+  Calculate all channels from Flow Accumulation with accumulate flow minor that Minlevel and accumulate flow major that Maxlevel.

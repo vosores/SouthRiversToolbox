@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Functions
+JoinAttributes
 
 ***************************************************************************
 *                                                                         *
@@ -13,14 +13,21 @@ Functions
 ***************************************************************************
 """
 
-from .ClipRasterByExtent import ClipRasterByExtent
-from .ClipRasterByMask import ClipRasterByMask
-from .FillDepressions import FillDepressions
-from .FlowDirection import FlowDirection
-from .FlowAccumulation import FlowAccumulation
-#from .RasterCalculator import RasterCalculator
-#from .StreamToFeature import StreamToFeature
-from .FlowDirectionCorrected import FlowDirectionCorrected
-from .Conditional import Conditional
-from .StreamToVector import StreamToVector
-from .ChannelPatternIdentification import ChannelPatternIdentification
+import os
+
+from qgis.core import ( # pylint:disable=no-name-in-module
+    QgsProcessingModelAlgorithm
+)
+
+from ..metadata import AlgorithmMetadata
+
+class JoinAttributes(AlgorithmMetadata, QgsProcessingModelAlgorithm):
+    """ 
+    Axisequencing
+    """
+
+    def __init__(self, *args, **kwargs):
+
+        super().__init__(*args, **kwargs)
+        self.METADATA = AlgorithmMetadata.read(__file__, type(self).__name__)
+        self.fromFile(os.path.join(os.path.dirname(__file__), type(self).__name__ + '.model3'))

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-RiversLines
+StreamToVector
 
 ***************************************************************************
 *                                                                         *
@@ -21,7 +21,7 @@ from qgis.core import ( # pylint:disable=no-name-in-module
 
 from ..metadata import AlgorithmMetadata
 
-class RiversLines(AlgorithmMetadata, QgsProcessingModelAlgorithm):
+class StreamToVector(AlgorithmMetadata, QgsProcessingModelAlgorithm):
 
     def __init__(self, *args, **kwargs):
 
