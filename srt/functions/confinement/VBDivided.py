@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
+VBDivided
+
 ***************************************************************************
 *                                                                         *
 *   This program is free software; you can redistribute it and/or modify  *
@@ -11,9 +13,19 @@
 ***************************************************************************
 """
 
-from .TransectByPoint import TransectByPoint
-from .InflexionPoints import InflexionPoints
-from .IntersectionPoints import IntersectionPoints
-from .Axisequencing import Axisequencing
-from .BreakLine import BreakLine
-#from .JoinAttributes import JoinAttributes
+import os
+
+from qgis.core import ( # pylint:disable=no-name-in-module
+    QgsProcessingModelAlgorithm
+)
+
+from ..metadata import AlgorithmMetadata
+
+class VBDivided(AlgorithmMetadata, QgsProcessingModelAlgorithm):
+
+    def __init__(self, *args, **kwargs):
+
+        super().__init__(*args, **kwargs)
+        self.METADATA = AlgorithmMetadata.read(__file__, type(self).__name__)
+        self.fromFile(os.path.join(os.path.dirname(__file__), type(self).__name__ + '.model3'))
+

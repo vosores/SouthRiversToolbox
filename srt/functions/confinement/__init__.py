@@ -13,3 +13,4 @@ Confinement
 ***************************************************************************
 """
 from .ConfinementContacts import ConfinementContacts
+from .VBDivided import VBDivided

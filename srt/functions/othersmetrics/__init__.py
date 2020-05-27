@@ -20,3 +20,4 @@ from .LineStringZSlope import LineStringZSlope
 from .MaximumOnShortestPath import MaximumOnShortestPath
 from .OrthogonalTransects import OrthogonalTransects
 from .PolygonWidth import PolygonWidth
+from .ChannelPatternIdentification import ChannelPatternIdentification

@@ -21,6 +21,5 @@ from .FlowAccumulation import FlowAccumulation
 #from .RasterCalculator import RasterCalculator
 #from .StreamToFeature import StreamToFeature
 from .FlowDirectionCorrected import FlowDirectionCorrected
-from .Conditional import Conditional
+#from .Conditional import Conditional
 from .StreamToVector import StreamToVector
-from .ChannelPatternIdentification import ChannelPatternIdentification

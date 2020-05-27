@@ -18,3 +18,4 @@ from .ValleyCenterLine import ValleyCenterLine
 from .OrientedCenterline import OrientedCenterline
 from .Sequencing import Sequencing
 from .Segmentation import Segmentation
+#from .NewVB import NewVB

@@ -1,0 +1,9 @@
+displayName: Valley Bottom Divided
+group: confinement
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - VB
+summary: |
+  This algorithm divided the polygonized valley bottom in the left part of valley bottom and the rigth part of valley bottom.
