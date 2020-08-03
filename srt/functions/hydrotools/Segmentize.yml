@@ -1,0 +1,8 @@
+displayName: Segmentize
+group: hydrotools
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - vector
+  - generator

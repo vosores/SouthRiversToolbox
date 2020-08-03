@@ -1,0 +1,9 @@
+displayName: Raster Difference
+group: demofdifference
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - raster
+  - statistics
+  - calculator

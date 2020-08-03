@@ -1,0 +1,11 @@
+displayName: Strahler Stream Order
+group: hydrotools
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - hydrography
+  - graph
+  - stream order
+  - Horton
+  - Strahler

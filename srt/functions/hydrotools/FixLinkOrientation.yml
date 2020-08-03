@@ -1,0 +1,7 @@
+displayName: Fix Link Orientation
+group: hydrotools
+summary: |
+  Check links are oriented downslope.
+tags:
+  - hydrography
+  - graph

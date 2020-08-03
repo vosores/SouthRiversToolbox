@@ -1,0 +1,8 @@
+displayName: Raster Info
+group: hydrotools
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - raster
+  - gdal

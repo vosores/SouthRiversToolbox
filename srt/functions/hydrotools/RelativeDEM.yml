@@ -1,0 +1,10 @@
+displayName: Relative DEM (Nearest)
+group: hydrotools
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - dem
+  - elevation
+  - detrend
+  - nearest

@@ -117,7 +117,7 @@ class Segmentation(AlgorithmMetadata, QgsProcessingAlgorithm):
             if feedback.isCanceled():
                 return {}
 
-            DGOs = processing.run('fct:disaggregatepolygon',
+            DGOs = processing.run('srt:disaggregatepolygon',
                     {
                         'polygon': self.layer,
                         'centerline': axis['OUTPUT'],

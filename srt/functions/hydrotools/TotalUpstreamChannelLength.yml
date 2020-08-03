@@ -1,0 +1,9 @@
+displayName: Total Upstream Channel Length
+group: hydrotools
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - hydrography
+  - graph
+  - metric

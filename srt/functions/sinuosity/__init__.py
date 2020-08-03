@@ -12,8 +12,8 @@
 """
 
 from .TransectByPoint import TransectByPoint
-from .InflexionPoints import InflexionPoints
-from .IntersectionPoints import IntersectionPoints
+#from .InflexionPoints import InflexionPoints
+#from .IntersectionPoints import IntersectionPoints
 from .Axisequencing import Axisequencing
 from .BreakLine import BreakLine
 #from .JoinAttributes import JoinAttributes

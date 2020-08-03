@@ -1,0 +1,10 @@
+displayName: 1.- Valley Bottom
+group: riverskeleton
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - vector
+  - model
+summary: |
+  Extract Valley Bottom from relative DEM.

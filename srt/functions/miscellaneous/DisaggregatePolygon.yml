@@ -1,0 +1,10 @@
+displayName: Disaggregate Polygon
+group: miscellaneous
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - vector
+  - DGO
+  - disaggregation
+  - model

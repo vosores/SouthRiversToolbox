@@ -1,0 +1,8 @@
+displayName: Differential Raster Threshold
+group: demofdifference
+shortHelpString: NULL
+helpString: NULL
+helpUrl: NULL
+tags:
+  - dem
+  - elevation

@@ -13,3 +13,7 @@ groups:
     displayName: e.- Confinement
   - id: riverclasification
     displayName: g.- River Style Clasification
+  - id: demofdifference
+    displayName: g.- DEM of difference
+  - id: hydrotools
+    displayName: h.- Hydrotools

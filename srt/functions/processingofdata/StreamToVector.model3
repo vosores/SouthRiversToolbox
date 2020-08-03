@@ -2,123 +2,123 @@
 <Option type="Map">
   <Option type="Map" name="children">
     <Option type="Map" name="grass7:r.stream.extract_1">
-      <Option type="bool" name="active" value="true"/>
+      <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
-      <Option type="QString" name="alg_id" value="grass7:r.stream.extract"/>
-      <Option type="QString" name="component_description" value="r.stream.extract"/>
-      <Option type="double" name="component_pos_x" value="406"/>
-      <Option type="double" name="component_pos_y" value="217"/>
+      <Option type="QString" value="grass7:r.stream.extract" name="alg_id"/>
+      <Option type="QString" value="r.stream.extract" name="component_description"/>
+      <Option type="double" value="406" name="component_pos_x"/>
+      <Option type="double" value="217" name="component_pos_y"/>
       <Option name="dependencies"/>
-      <Option type="QString" name="id" value="grass7:r.stream.extract_1"/>
+      <Option type="QString" value="grass7:r.stream.extract_1" name="id"/>
       <Option type="Map" name="outputs">
-        <Option type="Map" name="Rivers lines">
-          <Option type="QString" name="child_id" value="grass7:r.stream.extract_1"/>
-          <Option type="QString" name="component_description" value="Rivers lines"/>
-          <Option type="double" name="component_pos_x" value="568"/>
-          <Option type="double" name="component_pos_y" value="330"/>
+        <Option type="Map" name="Red de drenaje">
+          <Option type="QString" value="grass7:r.stream.extract_1" name="child_id"/>
+          <Option type="QString" value="Red de drenaje" name="component_description"/>
+          <Option type="double" value="606" name="component_pos_x"/>
+          <Option type="double" value="262" name="component_pos_y"/>
           <Option type="invalid" name="default_value"/>
-          <Option type="bool" name="mandatory" value="false"/>
-          <Option type="QString" name="name" value="Rivers lines"/>
-          <Option type="QString" name="output_name" value="stream_vector"/>
+          <Option type="bool" value="false" name="mandatory"/>
+          <Option type="QString" value="Red de drenaje" name="name"/>
+          <Option type="QString" value="stream_vector" name="output_name"/>
         </Option>
       </Option>
-      <Option type="bool" name="outputs_collapsed" value="true"/>
-      <Option type="bool" name="parameters_collapsed" value="true"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
       <Option type="Map" name="params">
         <Option type="List" name="GRASS_OUTPUT_TYPE_PARAMETER">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="int" name="static_value" value="2"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="2" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="GRASS_RASTER_FORMAT_META">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value=""/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="GRASS_RASTER_FORMAT_OPT">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value=""/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="GRASS_REGION_CELLSIZE_PARAMETER">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="double" name="static_value" value="0"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="double" value="0" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="GRASS_REGION_PARAMETER">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
+            <Option type="int" value="2" name="source"/>
             <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="GRASS_VECTOR_DSCO">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value=""/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="GRASS_VECTOR_EXPORT_NOCAT">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="bool" name="static_value" value="false"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="bool" value="false" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="GRASS_VECTOR_LCO">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="QString" name="static_value" value=""/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="QString" value="" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="accumulation">
           <Option type="Map">
-            <Option type="QString" name="parameter_name" value="FlowAccumulation"/>
-            <Option type="int" name="source" value="0"/>
+            <Option type="QString" value="FlowAccumulation" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
           </Option>
         </Option>
         <Option type="List" name="d8cut">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
+            <Option type="int" value="2" name="source"/>
             <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="depression">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
+            <Option type="int" value="2" name="source"/>
             <Option type="invalid" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="elevation">
           <Option type="Map">
-            <Option type="QString" name="parameter_name" value="DEMfilled"/>
-            <Option type="int" name="source" value="0"/>
+            <Option type="QString" value="DEMfilled" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
           </Option>
         </Option>
         <Option type="List" name="memory">
           <Option type="Map">
-            <Option type="QString" name="parameter_name" value="maximumofmemorytobeusedmb"/>
-            <Option type="int" name="source" value="0"/>
+            <Option type="QString" value="maximumofmemorytobeusedmb" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
           </Option>
         </Option>
         <Option type="List" name="mexp">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="double" name="static_value" value="0"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="double" value="0" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="stream_length">
           <Option type="Map">
-            <Option type="int" name="source" value="2"/>
-            <Option type="int" name="static_value" value="0"/>
+            <Option type="int" value="2" name="source"/>
+            <Option type="int" value="0" name="static_value"/>
           </Option>
         </Option>
         <Option type="List" name="threshold">
           <Option type="Map">
-            <Option type="QString" name="parameter_name" value="minimumflowaccumulationforstreams"/>
-            <Option type="int" name="source" value="0"/>
+            <Option type="QString" value="minimumflowaccumulationforstreams" name="parameter_name"/>
+            <Option type="int" value="0" name="source"/>
           </Option>
         </Option>
       </Option>
@@ -126,83 +126,83 @@
   </Option>
   <Option name="help"/>
   <Option name="modelVariables"/>
-  <Option type="QString" name="model_group" value="proccesingofdata"/>
-  <Option type="QString" name="model_name" value="Rivers lines"/>
+  <Option type="QString" value="proccesingofdata" name="model_group"/>
+  <Option type="QString" value="Red de drenaje" name="model_name"/>
   <Option type="Map" name="parameterDefinitions">
     <Option type="Map" name="DEMfilled">
       <Option type="invalid" name="default"/>
-      <Option type="QString" name="description" value="DEM filled"/>
-      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" value="DEM filled" name="description"/>
+      <Option type="int" value="0" name="flags"/>
       <Option name="metadata"/>
-      <Option type="QString" name="name" value="DEMfilled"/>
-      <Option type="QString" name="parameter_type" value="raster"/>
+      <Option type="QString" value="DEMfilled" name="name"/>
+      <Option type="QString" value="raster" name="parameter_type"/>
     </Option>
     <Option type="Map" name="FlowAccumulation">
       <Option type="invalid" name="default"/>
-      <Option type="QString" name="description" value="Flow Accumulation"/>
-      <Option type="int" name="flags" value="0"/>
+      <Option type="QString" value="Flow Accumulation" name="description"/>
+      <Option type="int" value="0" name="flags"/>
       <Option name="metadata"/>
-      <Option type="QString" name="name" value="FlowAccumulation"/>
-      <Option type="QString" name="parameter_type" value="raster"/>
+      <Option type="QString" value="FlowAccumulation" name="name"/>
+      <Option type="QString" value="raster" name="parameter_type"/>
     </Option>
-    <Option type="Map" name="grass7:r.stream.extract_1:Rivers lines">
-      <Option type="bool" name="create_by_default" value="true"/>
-      <Option type="int" name="data_type" value="-1"/>
+    <Option type="Map" name="grass7:r.stream.extract_1:Red de drenaje">
+      <Option type="bool" value="true" name="create_by_default"/>
+      <Option type="int" value="-1" name="data_type"/>
       <Option type="invalid" name="default"/>
-      <Option type="QString" name="description" value="Rivers lines"/>
-      <Option type="int" name="flags" value="8"/>
+      <Option type="QString" value="Red de drenaje" name="description"/>
+      <Option type="int" value="8" name="flags"/>
       <Option name="metadata"/>
-      <Option type="QString" name="name" value="grass7:r.stream.extract_1:Rivers lines"/>
-      <Option type="QString" name="parameter_type" value="vectorDestination"/>
-      <Option type="bool" name="supports_non_file_outputs" value="false"/>
+      <Option type="QString" value="grass7:r.stream.extract_1:Red de drenaje" name="name"/>
+      <Option type="QString" value="vectorDestination" name="parameter_type"/>
+      <Option type="bool" value="false" name="supports_non_file_outputs"/>
     </Option>
     <Option type="Map" name="maximumofmemorytobeusedmb">
-      <Option type="int" name="data_type" value="1"/>
-      <Option type="QString" name="default" value="500.0"/>
-      <Option type="QString" name="description" value="Maximum of memory to be used (MB)"/>
-      <Option type="int" name="flags" value="0"/>
-      <Option type="double" name="max" value="3000"/>
+      <Option type="int" value="1" name="data_type"/>
+      <Option type="QString" value="500.0" name="default"/>
+      <Option type="QString" value="Maximum of memory to be used (MB)" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option type="double" value="3000" name="max"/>
       <Option name="metadata"/>
-      <Option type="double" name="min" value="0"/>
-      <Option type="QString" name="name" value="maximumofmemorytobeusedmb"/>
-      <Option type="QString" name="parameter_type" value="number"/>
+      <Option type="double" value="0" name="min"/>
+      <Option type="QString" value="maximumofmemorytobeusedmb" name="name"/>
+      <Option type="QString" value="number" name="parameter_type"/>
     </Option>
     <Option type="Map" name="minimumflowaccumulationforstreams">
-      <Option type="int" name="data_type" value="1"/>
-      <Option type="QString" name="default" value="1.0"/>
-      <Option type="QString" name="description" value="Minimum flow accumulation for streams"/>
-      <Option type="int" name="flags" value="0"/>
-      <Option type="double" name="max" value="1.7976931348623157e+308"/>
+      <Option type="int" value="1" name="data_type"/>
+      <Option type="QString" value="1.0" name="default"/>
+      <Option type="QString" value="Minimum flow accumulation for streams" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option type="double" value="1.7976931348623157e+308" name="max"/>
       <Option name="metadata"/>
-      <Option type="double" name="min" value="0.0001"/>
-      <Option type="QString" name="name" value="minimumflowaccumulationforstreams"/>
-      <Option type="QString" name="parameter_type" value="number"/>
+      <Option type="double" value="0.0001" name="min"/>
+      <Option type="QString" value="minimumflowaccumulationforstreams" name="name"/>
+      <Option type="QString" value="number" name="parameter_type"/>
     </Option>
   </Option>
   <Option type="Map" name="parameters">
     <Option type="Map" name="DEMfilled">
-      <Option type="QString" name="component_description" value="DEMfilled"/>
-      <Option type="double" name="component_pos_x" value="120"/>
-      <Option type="double" name="component_pos_y" value="60"/>
-      <Option type="QString" name="name" value="DEMfilled"/>
+      <Option type="QString" value="DEMfilled" name="component_description"/>
+      <Option type="double" value="120" name="component_pos_x"/>
+      <Option type="double" value="60" name="component_pos_y"/>
+      <Option type="QString" value="DEMfilled" name="name"/>
     </Option>
     <Option type="Map" name="FlowAccumulation">
-      <Option type="QString" name="component_description" value="FlowAccumulation"/>
-      <Option type="double" name="component_pos_x" value="119"/>
-      <Option type="double" name="component_pos_y" value="121"/>
-      <Option type="QString" name="name" value="FlowAccumulation"/>
+      <Option type="QString" value="FlowAccumulation" name="component_description"/>
+      <Option type="double" value="119" name="component_pos_x"/>
+      <Option type="double" value="121" name="component_pos_y"/>
+      <Option type="QString" value="FlowAccumulation" name="name"/>
     </Option>
     <Option type="Map" name="maximumofmemorytobeusedmb">
-      <Option type="QString" name="component_description" value="maximumofmemorytobeusedmb"/>
-      <Option type="double" name="component_pos_x" value="127"/>
-      <Option type="double" name="component_pos_y" value="251"/>
-      <Option type="QString" name="name" value="maximumofmemorytobeusedmb"/>
+      <Option type="QString" value="maximumofmemorytobeusedmb" name="component_description"/>
+      <Option type="double" value="127" name="component_pos_x"/>
+      <Option type="double" value="251" name="component_pos_y"/>
+      <Option type="QString" value="maximumofmemorytobeusedmb" name="name"/>
     </Option>
     <Option type="Map" name="minimumflowaccumulationforstreams">
-      <Option type="QString" name="component_description" value="minimumflowaccumulationforstreams"/>
-      <Option type="double" name="component_pos_x" value="118"/>
-      <Option type="double" name="component_pos_y" value="185"/>
-      <Option type="QString" name="name" value="minimumflowaccumulationforstreams"/>
+      <Option type="QString" value="minimumflowaccumulationforstreams" name="component_description"/>
+      <Option type="double" value="118" name="component_pos_x"/>
+      <Option type="double" value="185" name="component_pos_y"/>
+      <Option type="QString" value="minimumflowaccumulationforstreams" name="name"/>
     </Option>
   </Option>
 </Option>

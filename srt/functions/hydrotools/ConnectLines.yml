@@ -1,0 +1,8 @@
+displayName: Connect Lines
+group: hydrotools
+summary: |
+  Search for a point on the nearest line for each input node.
+tags:
+  - hydrography
+  - graph
+  - aggregate
