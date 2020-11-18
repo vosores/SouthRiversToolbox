@@ -17,3 +17,5 @@ groups:
     displayName: g.- DEM of difference
   - id: hydrotools
     displayName: h.- Hydrotools
+  - id: segmentation
+    displayName: i.- Segmentation

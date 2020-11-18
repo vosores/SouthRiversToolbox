@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-ConfinementContacts
+ContactsBySides
 
 ***************************************************************************
 *                                                                         *
@@ -21,7 +21,7 @@ from qgis.core import ( # pylint:disable=no-name-in-module
 
 from ..metadata import AlgorithmMetadata
 
-class prueba(AlgorithmMetadata, QgsProcessingModelAlgorithm):
+class ContactsBySides(AlgorithmMetadata, QgsProcessingModelAlgorithm):
 
     def __init__(self, *args, **kwargs):
 

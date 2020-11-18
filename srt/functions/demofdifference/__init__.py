@@ -12,7 +12,7 @@ DEMofDifference
 *                                                                         *
 ***************************************************************************
 """
-from .prueba import prueba
+
 from .RasterDifference import RasterDifference
 from .FocalMean import FocalMean
 from .DifferentialRasterThreshold import DifferentialRasterThreshold

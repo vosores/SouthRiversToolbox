@@ -242,14 +242,14 @@
       <Option name="dependencies"/>
       <Option type="QString" value="qgis:fieldcalculator_5" name="id"/>
       <Option type="Map" name="outputs">
-        <Option type="Map" name="Confinement by Reach">
+        <Option type="Map" name="Confinement">
           <Option type="QString" value="qgis:fieldcalculator_5" name="child_id"/>
-          <Option type="QString" value="Confinement by Reach" name="component_description"/>
+          <Option type="QString" value="Confinement" name="component_description"/>
           <Option type="double" value="1154" name="component_pos_x"/>
           <Option type="double" value="561" name="component_pos_y"/>
           <Option type="invalid" name="default_value"/>
           <Option type="bool" value="false" name="mandatory"/>
-          <Option type="QString" value="Confinement by Reach" name="name"/>
+          <Option type="QString" value="Confinement" name="name"/>
           <Option type="QString" value="OUTPUT" name="output_name"/>
         </Option>
       </Option>
@@ -318,14 +318,14 @@
       <Option type="QString" value="demreach" name="name"/>
       <Option type="QString" value="vector" name="parameter_type"/>
     </Option>
-    <Option type="Map" name="qgis:fieldcalculator_5:Confinement by Reach">
+    <Option type="Map" name="qgis:fieldcalculator_5:Confinement">
       <Option type="bool" value="true" name="create_by_default"/>
       <Option type="int" value="-1" name="data_type"/>
       <Option type="invalid" name="default"/>
-      <Option type="QString" value="Confinement by Reach" name="description"/>
+      <Option type="QString" value="Confinement" name="description"/>
       <Option type="int" value="0" name="flags"/>
       <Option name="metadata"/>
-      <Option type="QString" value="qgis:fieldcalculator_5:Confinement by Reach" name="name"/>
+      <Option type="QString" value="qgis:fieldcalculator_5:Confinement" name="name"/>
       <Option type="QString" value="sink" name="parameter_type"/>
       <Option type="bool" value="true" name="supports_non_file_outputs"/>
     </Option>

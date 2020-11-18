@@ -1,0 +1,9 @@
+displayName: 1.- Holistic Segments
+group: segmentation
+summary: |
+  Segmentation
+tags:
+  - hydrography
+  - ordination
+  - network
+  - polyline
