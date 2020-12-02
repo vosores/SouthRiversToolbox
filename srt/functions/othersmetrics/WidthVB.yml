@@ -1,10 +1,7 @@
-displayName: Channel Pattern Identification
+displayName: WidthVB
 group: othersmetrics
 shortHelpString: NULL
 helpString: NULL
 helpUrl: NULL
 tags:
   - hydrography
-  - dem
-summary: |
-  Completar

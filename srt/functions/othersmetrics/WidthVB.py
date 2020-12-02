@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Build cython modules
+WidthVB
 
 ***************************************************************************
 *                                                                         *
@@ -13,24 +13,21 @@ Build cython modules
 ***************************************************************************
 """
 
-from distutils.core import setup
-from distutils.extension import Extension
-import numpy
-from Cython.Build import cythonize
+import os
 
-
-extensions = [
-
-    Extension(
-        'terrain_analysis',
-        ['terrain/terrain_analysis.pyx'],
-        language='c++',
-        include_dirs=[numpy.get_include()]
-    )
-
-]
-
-setup(
-    name="terrain_analysis",
-    ext_modules=cythonize(extensions)
+from qgis.core import ( # pylint:disable=no-name-in-module
+    QgsProcessingModelAlgorithm
 )
+
+from ..metadata import AlgorithmMetadata
+
+class WidthVB(AlgorithmMetadata, QgsProcessingModelAlgorithm):
+    """ 
+    WidthVB
+    """
+
+    def __init__(self, *args, **kwargs):
+
+        super().__init__(*args, **kwargs)
+        self.METADATA = AlgorithmMetadata.read(__file__, type(self).__name__)
+        self.fromFile(os.path.join(os.path.dirname(__file__), type(self).__name__ + '.model3'))

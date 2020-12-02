@@ -44,6 +44,49 @@
         </Option>
       </Option>
     </Option>
+    <Option name="native:dissolve_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:dissolve" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="2147.6632059023395" type="double"/>
+        <Option name="component_pos_y" value="1301.937120052259" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Disolver" type="QString"/>
+      <Option name="component_height" value="40.899427553755906" type="double"/>
+      <Option name="component_pos_x" value="1936.7637783485834" type="double"/>
+      <Option name="component_pos_y" value="1305.5192953479864" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:dissolve_2" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="StringList">
+              <Option value="NEW_VAR" type="QString"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="qgis:fieldcalculator_7" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
     <Option name="native:intersection_1" type="Map">
       <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
@@ -279,6 +322,67 @@
         <Option name="INPUT" type="List">
           <Option type="Map">
             <Option name="child_id" value="native:dissolve_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:multiparttosingleparts_2" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:multiparttosingleparts" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="2363.303434880837" type="double"/>
+        <Option name="component_pos_y" value="1427.0058034258973" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="Multiparte a monoparte" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="2137.144808751823" type="double"/>
+      <Option name="component_pos_y" value="1359.7416996222119" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:multiparttosingleparts_2" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Binary Segments" type="Map">
+          <Option name="child_id" value="native:multiparttosingleparts_2" type="QString"/>
+          <Option name="color" value="" type="QString"/>
+          <Option name="comment" type="Map">
+            <Option name="color" value="" type="QString"/>
+            <Option name="component_description" value="" type="QString"/>
+            <Option name="component_height" value="60" type="double"/>
+            <Option name="component_pos_x" value="0" type="double"/>
+            <Option name="component_pos_y" value="0" type="double"/>
+            <Option name="component_width" value="100" type="double"/>
+            <Option name="outputs_collapsed" value="true" type="bool"/>
+            <Option name="parameters_collapsed" value="true" type="bool"/>
+          </Option>
+          <Option name="component_description" value="Binary Segments" type="QString"/>
+          <Option name="component_height" value="30" type="double"/>
+          <Option name="component_pos_x" value="2338.2347515071983" type="double"/>
+          <Option name="component_pos_y" value="1421.0908409528456" type="double"/>
+          <Option name="component_width" value="200" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="Binary Segments" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
+          <Option name="outputs_collapsed" value="true" type="bool"/>
+          <Option name="parameters_collapsed" value="true" type="bool"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:dissolve_2" type="QString"/>
             <Option name="output_name" value="OUTPUT" type="QString"/>
             <Option name="source" value="1" type="int"/>
           </Option>
@@ -733,33 +837,7 @@
       <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
       <Option name="id" value="qgis:fieldcalculator_7" type="QString"/>
-      <Option name="outputs" type="Map">
-        <Option name="NEW_VAR" type="Map">
-          <Option name="child_id" value="qgis:fieldcalculator_7" type="QString"/>
-          <Option name="color" value="" type="QString"/>
-          <Option name="comment" type="Map">
-            <Option name="color" value="" type="QString"/>
-            <Option name="component_description" value="" type="QString"/>
-            <Option name="component_height" value="60" type="double"/>
-            <Option name="component_pos_x" value="0" type="double"/>
-            <Option name="component_pos_y" value="0" type="double"/>
-            <Option name="component_width" value="100" type="double"/>
-            <Option name="outputs_collapsed" value="true" type="bool"/>
-            <Option name="parameters_collapsed" value="true" type="bool"/>
-          </Option>
-          <Option name="component_description" value="NEW_VAR" type="QString"/>
-          <Option name="component_height" value="30" type="double"/>
-          <Option name="component_pos_x" value="1995.5544532739364" type="double"/>
-          <Option name="component_pos_y" value="1307.849131154977" type="double"/>
-          <Option name="component_width" value="200" type="double"/>
-          <Option name="default_value" type="invalid"/>
-          <Option name="mandatory" value="false" type="bool"/>
-          <Option name="name" value="NEW_VAR" type="QString"/>
-          <Option name="output_name" value="OUTPUT" type="QString"/>
-          <Option name="outputs_collapsed" value="true" type="bool"/>
-          <Option name="parameters_collapsed" value="true" type="bool"/>
-        </Option>
-      </Option>
+      <Option name="outputs"/>
       <Option name="outputs_collapsed" value="true" type="bool"/>
       <Option name="parameters_collapsed" value="true" type="bool"/>
       <Option name="params" type="Map">
@@ -856,13 +934,14 @@
     </Option>
   </Option>
   <Option name="designerParameterValues" type="Map">
-    <Option name="CenterlineofValleyBottom" value="CLine_Andalien_96593eef_ca2f_4d0e_a2b7_97c9ab995fbb" type="QString"/>
-    <Option name="IslandonValleyBottom" value="Islands_bars_med_1a91fc0c_2cf1_469e_81ec_c885496d7dcf" type="QString"/>
+    <Option name="CenterlineofValleyBottom" value="/home/lucas/Escritorio/Segmentation/1_VARIABLES_FINALES/CLine_Andalien.shp" type="QString"/>
+    <Option name="Featurelength" value="300" type="double"/>
+    <Option name="IslandonValleyBottom" value="/home/lucas/Escritorio/Segmentation/1_VARIABLES_FINALES/Islands_bars_med.shp" type="QString"/>
     <Option name="Segmentationstep" value="100" type="double"/>
     <Option name="TotallongofCenterline" value="22977.2" type="double"/>
     <Option name="VERBOSE_LOG" value="true" type="bool"/>
-    <Option name="ValleyBottom" value="VB_andalien_16520aa7_bf22_4f19_878d_69c7f16af4e4" type="QString"/>
-    <Option name="native:multiparttosingleparts_1:VB_monoparte" type="QgsProcessingOutputLayerDefinition">
+    <Option name="ValleyBottom" value="/home/lucas/Escritorio/Segmentation/1_VARIABLES_FINALES/VB_andalien.shp" type="QString"/>
+    <Option name="native:multiparttosingleparts_2:Binary Segments" type="QgsProcessingOutputLayerDefinition">
       <Option type="Map">
         <Option name="create_options" type="Map">
           <Option name="fileEncoding" value="System" type="QString"/>
@@ -870,31 +949,7 @@
         <Option name="sink" type="Map">
           <Option name="active" value="true" type="bool"/>
           <Option name="type" value="1" type="int"/>
-          <Option name="val" value="/home/lucas/Escritorio/Segmentation/1_VARIABLES_FINALES/disuelto.shp" type="QString"/>
-        </Option>
-      </Option>
-    </Option>
-    <Option name="qgis:fieldcalculator_1:Var_actualiced" type="QgsProcessingOutputLayerDefinition">
-      <Option type="Map">
-        <Option name="create_options" type="Map">
-          <Option name="fileEncoding" value="System" type="QString"/>
-        </Option>
-        <Option name="sink" type="Map">
-          <Option name="active" value="true" type="bool"/>
-          <Option name="type" value="1" type="int"/>
-          <Option name="val" value="/home/lucas/Escritorio/Segmentation/1_VARIABLES_FINALES/var_actualiced.shp" type="QString"/>
-        </Option>
-      </Option>
-    </Option>
-    <Option name="qgis:fieldcalculator_4:WITH_RATIO" type="QgsProcessingOutputLayerDefinition">
-      <Option type="Map">
-        <Option name="create_options" type="Map">
-          <Option name="fileEncoding" value="System" type="QString"/>
-        </Option>
-        <Option name="sink" type="Map">
-          <Option name="active" value="true" type="bool"/>
-          <Option name="type" value="1" type="int"/>
-          <Option name="val" value="/home/lucas/Escritorio/Segmentation/1_VARIABLES_FINALES/RATIO.shp" type="QString"/>
+          <Option name="val" value="/home/lucas/Escritorio/Segmentation/1_VARIABLES_FINALES/binary_segments.shp" type="QString"/>
         </Option>
       </Option>
     </Option>
@@ -910,6 +965,7 @@
       <Option name="default" type="invalid"/>
       <Option name="description" value="Centerline of Valley Bottom" type="QString"/>
       <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
       <Option name="metadata"/>
       <Option name="name" value="CenterlineofValleyBottom" type="QString"/>
       <Option name="parameter_type" value="vector" type="QString"/>
@@ -919,6 +975,7 @@
       <Option name="default" type="invalid"/>
       <Option name="description" value="Feature length" type="QString"/>
       <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
       <Option name="max" value="1.7976931348623157e+308" type="double"/>
       <Option name="metadata"/>
       <Option name="min" value="0" type="double"/>
@@ -930,6 +987,7 @@
       <Option name="default" type="invalid"/>
       <Option name="description" value="Island on Valley Bottom" type="QString"/>
       <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
       <Option name="metadata"/>
       <Option name="name" value="IslandonValleyBottom" type="QString"/>
       <Option name="parameter_type" value="vector" type="QString"/>
@@ -939,6 +997,7 @@
       <Option name="default" value="100" type="double"/>
       <Option name="description" value="Segmentation step" type="QString"/>
       <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
       <Option name="max" value="1000" type="double"/>
       <Option name="metadata"/>
       <Option name="min" value="0" type="double"/>
@@ -950,6 +1009,7 @@
       <Option name="default" type="invalid"/>
       <Option name="description" value="Total long of Centerline" type="QString"/>
       <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
       <Option name="max" value="1.7976931348623157e+308" type="double"/>
       <Option name="metadata"/>
       <Option name="min" value="0" type="double"/>
@@ -961,20 +1021,22 @@
       <Option name="default" type="invalid"/>
       <Option name="description" value="Valley Bottom" type="QString"/>
       <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
       <Option name="metadata"/>
       <Option name="name" value="ValleyBottom" type="QString"/>
       <Option name="parameter_type" value="vector" type="QString"/>
     </Option>
-    <Option name="qgis:fieldcalculator_7:NEW_VAR" type="Map">
+    <Option name="native:multiparttosingleparts_2:Binary Segments" type="Map">
       <Option name="create_by_default" value="true" type="bool"/>
       <Option name="data_type" value="-1" type="int"/>
       <Option name="default" type="invalid"/>
-      <Option name="description" value="NEW_VAR" type="QString"/>
+      <Option name="description" value="Binary Segments" type="QString"/>
       <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
       <Option name="metadata"/>
-      <Option name="name" value="qgis:fieldcalculator_7:NEW_VAR" type="QString"/>
+      <Option name="name" value="native:multiparttosingleparts_2:Binary Segments" type="QString"/>
       <Option name="parameter_type" value="sink" type="QString"/>
-      <Option name="supports_append" value="false" type="bool"/>
+      <Option name="supports_append" value="true" type="bool"/>
       <Option name="supports_non_file_outputs" value="true" type="bool"/>
     </Option>
   </Option>

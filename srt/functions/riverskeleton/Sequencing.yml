@@ -1,4 +1,4 @@
-displayName: 5.- Sequencing
+displayName: 5.- Sequencing (FCT)
 group: riverskeleton
 summary: |
   Check and correct ordination and orientation of a stream network using a DEM.

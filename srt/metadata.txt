@@ -1,11 +1,11 @@
 [general]
 name = SouthRiversToolbox
 qgisMinimumVersion = 3.4.0
-qgisMaximumVersion = 3.99.0
+qgisMaximumVersion = 3.16.1
 description = South Rivers Toolbox
-version = 1.0.1
+version = 1.0.2
 author = Víctor Osores, Santiago Yepez
-email = victosores@gmail.com, syepez14@gmail.com
+email = victosoresescalona@gmail.com, syepez14@gmail.com
 category = Vector
 server = False
 about = Predictive model of river morphodynamics to support river management.
@@ -16,9 +16,10 @@ icon = images/icon.png
 experimental = True
 
 changelog = 
+	1.0.2
+	- Second version of South Rivers Toolbox on github
 	1.0.1
 	- Bug fixes
-
 	1.0.0
 	- First version of South Rivers Toolbox on github
 
