@@ -1,28 +1,4 @@
 <?xml-stylesheet type="text/xsl" href="plugins.xsl" ?><plugins>
-    <pyqgis_plugin name="South Rivers Toolbox" version="1.0.2" plugin_id="2">
-        <description>South River Toolbox</description>
-        <version>1.0.2</version>
-        <qgis_minimum_version>3.4.0</qgis_minimum_version>
-        <qgis_maximum_version>3.16.1</qgis_maximum_version>
-        <homepage></homepage>
-        <file_name>SouthRiversToolbox.1.0.2.zip</file_name>
-        <icon></icon>
-        <author_name>Víctor Osores, Santiago Yepez</author_name>
-        <download_url>https://github.com/vosores/SouthRiversToolbox/releases/download/v1.0.2/SouthRiversToolbox.1.0.2.zip</download_url>
-        <uploaded_by>Víctor Osores</uploaded_by>
-        <create_date>2020-02-12</create_date>
-        <update_date>2020-12-02</update_date>
-        <experimental>True</experimental>
-        <deprecated>False</deprecated>
-        <tracker></tracker>
-        <repository>https://github.com/vosores/SouthRiversToolbox</repository>
-        <tags>vector, analysis, processing</tags>
-        <downloads>1</downloads>
-        <average_vote>5</average_vote>
-        <rating_votes>1</rating_votes>
-        <external_dependencies/>
-        <server>False</server>
-    </pyqgis_plugin>
     <pyqgis_plugin name="South Rivers Toolbox" version="1.0.1" plugin_id="1">
         <description>South River Toolbox</description>
         <version>1.0.1</version>
@@ -36,6 +12,30 @@
         <uploaded_by>Víctor Osores</uploaded_by>
         <create_date>2020-02-12</create_date>
         <update_date>2020-02-12</update_date>
+        <experimental>True</experimental>
+        <deprecated>False</deprecated>
+        <tracker></tracker>
+        <repository>https://github.com/vosores/SouthRiversToolbox</repository>
+        <tags>vector, analysis, processing</tags>
+        <downloads>1</downloads>
+        <average_vote>5</average_vote>
+        <rating_votes>1</rating_votes>
+        <external_dependencies/>
+        <server>False</server>
+    </pyqgis_plugin>
+    <pyqgis_plugin name="South Rivers Toolbox" version="1.0.2" plugin_id="2">
+        <description>South River Toolbox</description>
+        <version>1.0.2</version>
+        <qgis_minimum_version>3.4.0</qgis_minimum_version>
+        <qgis_maximum_version>3.16.1</qgis_maximum_version>
+        <homepage></homepage>
+        <file_name>SouthRiversToolbox.1.0.2.zip</file_name>
+        <icon></icon>
+        <author_name>Víctor Osores, Santiago Yepez</author_name>
+        <download_url>https://github.com/vosores/SouthRiversToolbox/releases/download/v1.0.2/SouthRiversToolbox.1.0.2.zip</download_url>
+        <uploaded_by>Víctor Osores</uploaded_by>
+        <create_date>2020-02-12</create_date>
+        <update_date>2020-12-02</update_date>
         <experimental>True</experimental>
         <deprecated>False</deprecated>
         <tracker></tracker>
