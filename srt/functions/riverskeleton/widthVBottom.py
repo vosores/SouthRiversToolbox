@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-River skeleton
+withVB
 
 ***************************************************************************
 *                                                                         *
@@ -13,10 +13,18 @@ River skeleton
 ***************************************************************************
 """
 
-#from .ValleyBottom import ValleyBottom
-from .ValleyCenterLine import ValleyCenterLine
-from .OrientedCenterline import OrientedCenterline
-from .Sequencing import Sequencing
-from .Segmentation import Segmentation
-from .widthVBottom import widthVBottom
-#from .NewVB import NewVB
+import os
+
+from qgis.core import ( # pylint:disable=no-name-in-module
+    QgsProcessingModelAlgorithm
+)
+
+from ..metadata import AlgorithmMetadata
+
+class widthVBottom(AlgorithmMetadata, QgsProcessingModelAlgorithm):
+
+    def __init__(self, *args, **kwargs):
+
+        super().__init__(*args, **kwargs)
+        self.METADATA = AlgorithmMetadata.read(__file__, type(self).__name__)
+        self.fromFile(os.path.join(os.path.dirname(__file__), type(self).__name__ + '.model3'))
