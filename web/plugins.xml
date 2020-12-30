@@ -27,7 +27,7 @@
         <description>South River Toolbox</description>
         <version>1.0.2</version>
         <qgis_minimum_version>3.4.0</qgis_minimum_version>
-        <qgis_maximum_version>3.16</qgis_maximum_version>
+        <qgis_maximum_version>3.99.0</qgis_maximum_version>
         <homepage></homepage>
         <file_name>SouthRiversToolbox.1.0.2.zip</file_name>
         <icon></icon>
