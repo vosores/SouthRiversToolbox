@@ -1,7 +1,7 @@
 [general]
 name = SouthRiversToolbox
 qgisMinimumVersion = 3.4.0
-qgisMaximumVersion = 3.16
+qgisMaximumVersion = 3.99.0
 description = South Rivers Toolbox
 version = 1.0.2
 author = Víctor Osores, Santiago Yepez
