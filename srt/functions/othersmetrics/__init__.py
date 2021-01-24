@@ -22,3 +22,4 @@ from .OrthogonalTransects import OrthogonalTransects
 from .PolygonWidth import PolygonWidth
 from .ChannelPatternIdentification import ChannelPatternIdentification
 from .WidthVB import WidthVB
+from .ElevationAndSlope import ElevationAndSlope

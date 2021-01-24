@@ -1,0 +1,10 @@
+displayName: 5.- Width Valley Bottom
+group: riverskeleton
+summary: |
+  Calcula el ancho del VB
+      
+tags:
+  - vector
+  - polygon
+  - centerline
+  - valley

@@ -1,8 +1,7 @@
-displayName: 1.- Valley bottom
-group: riverskeleton
+displayName: Elevation and slope
+group: othersmetrics
 shortHelpString: NULL
 helpString: NULL
 helpUrl: NULL
 tags:
   - hydrography
-  - spatialcomponents

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-ValleyBottom
+Elevation and Slope
 
 ***************************************************************************
 *                                                                         *
@@ -21,9 +21,9 @@ from qgis.core import ( # pylint:disable=no-name-in-module
 
 from ..metadata import AlgorithmMetadata
 
-class ValleyBottom(AlgorithmMetadata, QgsProcessingModelAlgorithm):
+class ElevationAndSlope(AlgorithmMetadata, QgsProcessingModelAlgorithm):
     """ 
-    Extract valley bottom over the studied area
+    ElevationAndSlope
     """
 
     def __init__(self, *args, **kwargs):

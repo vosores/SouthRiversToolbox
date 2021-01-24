@@ -13,10 +13,8 @@ River skeleton
 ***************************************************************************
 """
 
-#from .ValleyBottom import ValleyBottom
 from .ValleyCenterLine import ValleyCenterLine
 from .OrientedCenterline import OrientedCenterline
 from .Sequencing import Sequencing
 from .Segmentation import Segmentation
-from .widthVBottom import widthVBottom
-#from .NewVB import NewVB
+from .AnchoVB import AnchoVB

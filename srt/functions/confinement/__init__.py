@@ -14,6 +14,5 @@ Confinement
 """
 from .ConfinementContacts import ConfinementContacts
 from .VBDivided import VBDivided
-#from .VBConfined import VBConfined
 from .Confinement import Confinement
 from .ContactsBySides import ContactsBySides

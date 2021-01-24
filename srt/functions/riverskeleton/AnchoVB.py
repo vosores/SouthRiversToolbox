@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-withVB
+AnchoVB
 
 ***************************************************************************
 *                                                                         *
@@ -21,7 +21,7 @@ from qgis.core import ( # pylint:disable=no-name-in-module
 
 from ..metadata import AlgorithmMetadata
 
-class widthVBottom(AlgorithmMetadata, QgsProcessingModelAlgorithm):
+class AnchoVB(AlgorithmMetadata, QgsProcessingModelAlgorithm):
 
     def __init__(self, *args, **kwargs):
 
