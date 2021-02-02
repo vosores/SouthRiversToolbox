@@ -1,0 +1,7 @@
+displayName: Graphics
+group: othersmetrics
+shortHelpString: Plotting river width along centerline.
+helpString: NULL
+helpUrl: NULL
+tags:
+  - Plotting river width along centerline.

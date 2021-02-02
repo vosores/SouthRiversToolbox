@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-WidthVB
+Mono Multi Channel
 
 ***************************************************************************
 *                                                                         *
@@ -21,9 +21,9 @@ from qgis.core import ( # pylint:disable=no-name-in-module
 
 from ..metadata import AlgorithmMetadata
 
-class WidthVB(AlgorithmMetadata, QgsProcessingModelAlgorithm):
+class MonoMultiChannel(AlgorithmMetadata, QgsProcessingModelAlgorithm):
     """ 
-    WidthVB
+    Mono Multi Channel
     """
 
     def __init__(self, *args, **kwargs):
