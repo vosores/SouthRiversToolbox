@@ -119,7 +119,7 @@ class Graphics(AlgorithmMetadata, QgsProcessingAlgorithm):
         colors = QgsProcessingParameterEnum(
                     self.colors,
                     self.tr('Figure color'),
-                    ['grey', 'colors'],
+                    ['grey', 'colors', 'colors with line'],
                     defaultValue=1
                 )
         colors.setFlags(colors.flags() | QgsProcessingParameterDefinition.FlagAdvanced)
@@ -226,8 +226,12 @@ class Graphics(AlgorithmMetadata, QgsProcessingAlgorithm):
         fig, axs = plt.subplots(figsize=(size_figx,size_figy))
         axs.grid(True,linestyle='--')
         if colors==0:
-            axs.stackplot(x,y, baseline='zero',color='grey')
-            axs.stackplot(x,-z, baseline='zero',color='lightgrey')
+            axs.stackplot(x,y, baseline='zero',color='dimgrey')
+            axs.stackplot(x,-z, baseline='zero',color='silver')
+        elif colors==1:
+            axs.stackplot(x,y, baseline='zero',color='blue')
+            axs.stackplot(x,-z, baseline='zero',color='orange')
+            # axs.plot(x,y,x,-z,color='black')
         else:
             axs.stackplot(x,y, baseline='zero',color='blue')
             axs.stackplot(x,-z, baseline='zero',color='orange')
