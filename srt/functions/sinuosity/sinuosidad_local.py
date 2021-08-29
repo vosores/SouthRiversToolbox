@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-FillDepressions
+Axisequencing
 
 ***************************************************************************
 *                                                                         *
@@ -21,7 +21,10 @@ from qgis.core import ( # pylint:disable=no-name-in-module
 
 from ..metadata import AlgorithmMetadata
 
-class FillDepressions(AlgorithmMetadata, QgsProcessingModelAlgorithm):
+class sinuosidad_local(AlgorithmMetadata, QgsProcessingModelAlgorithm):
+    """ 
+    Sinuosidad local
+    """
 
     def __init__(self, *args, **kwargs):
 

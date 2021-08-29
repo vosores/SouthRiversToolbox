@@ -15,11 +15,3 @@ Functions
 
 from .ClipRasterByExtent import ClipRasterByExtent
 from .ClipRasterByMask import ClipRasterByMask
-from .FillDepressions import FillDepressions
-from .FlowDirection import FlowDirection
-from .FlowAccumulation import FlowAccumulation
-#from .RasterCalculator import RasterCalculator
-#from .StreamToFeature import StreamToFeature
-from .FlowDirectionCorrected import FlowDirectionCorrected
-#from .Conditional import Conditional
-from .StreamToVector import StreamToVector

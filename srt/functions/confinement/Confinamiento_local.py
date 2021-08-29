@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-StreamToVector
+ConfinementContacts
 
 ***************************************************************************
 *                                                                         *
@@ -21,10 +21,11 @@ from qgis.core import ( # pylint:disable=no-name-in-module
 
 from ..metadata import AlgorithmMetadata
 
-class StreamToVector(AlgorithmMetadata, QgsProcessingModelAlgorithm):
+class Confinamiento_local(AlgorithmMetadata, QgsProcessingModelAlgorithm):
 
     def __init__(self, *args, **kwargs):
 
         super().__init__(*args, **kwargs)
         self.METADATA = AlgorithmMetadata.read(__file__, type(self).__name__)
         self.fromFile(os.path.join(os.path.dirname(__file__), type(self).__name__ + '.model3'))
+

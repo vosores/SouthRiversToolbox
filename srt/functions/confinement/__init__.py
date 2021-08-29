@@ -16,3 +16,4 @@ from .ConfinementContacts import ConfinementContacts
 from .VBDivided import VBDivided
 from .Confinement import Confinement
 from .ContactsBySides import ContactsBySides
+from .Confinamiento_local import Confinamiento_local

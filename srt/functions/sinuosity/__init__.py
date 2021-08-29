@@ -18,3 +18,5 @@ from .TransectByPoint import TransectByPoint
 from .BreakLine import BreakLine
 #from .LinksRank import LinksRank
 #from .JoinAttributes import JoinAttributes
+from .sinuosidad_local import sinuosidad_local
+from .sinuosidad_macro import sinuosidad_macro
