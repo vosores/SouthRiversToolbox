@@ -36,7 +36,7 @@ class AlgorithmMetadata(object):
             os.path.join(os.path.dirname(sourcefile), basename + '.yml'),
             encoding='utf-8') as stream:
 
-            return yaml.load(stream)
+            return yaml.load(stream, Loader=yaml.FullLoader)
 
     def createInstance(self):
         return type(self)()
